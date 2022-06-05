@@ -1,0 +1,93 @@
+.option {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.option:active {
+  background: none;
+}
+
+.option__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.option__custom {
+  position: relative;
+
+  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+
+  border: 2px solid #000;
+}
+
+.option__input:hover + .option__custom,
+.option__input:focus + .option__custom {
+  border-color: $secondaryColor;
+}
+
+.option__custom::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 22px;
+  height: 16px;
+
+  background: url("../img/checkmark.svg") center no-repeat;
+}
+
+.option__input:checked + .option__custom::before {
+  content: "";
+}
+
+.option__custom--radio {
+  border-radius: 50%;
+}
+
+.option__custom--radio::before {
+  width: 15px;
+  height: 15px;
+
+  background: $secondaryColor;
+  border-radius: 50%;
+}
+
+@media (min-width: $tabletWidth) {
+  .option__custom {
+    width: 52px;
+    height: 52px;
+  }
+
+  .option__custom::before {
+    width: 33px;
+    height: 22px;
+  }
+
+  .option__custom--radio::before {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .option {
+    cursor: pointer;
+  }
+}

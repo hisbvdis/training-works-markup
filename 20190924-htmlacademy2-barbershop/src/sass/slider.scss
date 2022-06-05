@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.slider__switcher {
+  margin: 0;
+  min-height: 7px;
+
+  line-height: 0;
+  text-align: center;
+}
+
+.slider__switcher-btn {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+
+  color: inherit;
+  
+  background: transparent;
+  border: 1px solid currentColor;
+  cursor: pointer;
+
+  transform: rotate(45deg);
+}
+
+.slider__switcher-btn--active {
+  background: currentColor;
+}
+
+.slider__switcher-btn + .slider__switcher-btn {
+  margin-left: 22px;
+}

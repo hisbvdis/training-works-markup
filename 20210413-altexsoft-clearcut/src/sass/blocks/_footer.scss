@@ -1,0 +1,10 @@
+@media (min-width: $desktop) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    font-size: 12rem;
+    line-height: 19.2rem;
+  }
+}

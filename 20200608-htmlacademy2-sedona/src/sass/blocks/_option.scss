@@ -1,0 +1,54 @@
+.option {
+  display: inline-flex;
+  align-items: center;
+
+  vertical-align: middle;
+}
+
+.option__input {
+  margin: 0;
+}
+
+.option__mark {
+  position: relative;
+
+  flex-shrink: 0;
+  display: inline-block;
+  inline-size: 40px;
+  block-size: 40px;
+  margin-inline-end: 20px;
+
+  vertical-align: middle;
+
+  background: #f2f2f2;
+}
+
+.option__mark--radio {
+  border-radius: 50%;
+}
+
+.option__input:checked + .option__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+.option__input:checked + .option__mark--radio::before {
+  background: #333333;
+  border-radius: 50%;
+}
+
+.option__input:checked + .option__mark--checkbox::before {
+  transform: translate(-50%, -70%) rotate(-45deg);
+  
+  inline-size: 65%;
+  block-size: 25%;
+  
+  border-inline-start: 2px solid #333;
+  border-block-end: 2px solid #333;
+}

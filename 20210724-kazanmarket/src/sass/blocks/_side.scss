@@ -1,0 +1,33 @@
+.side__list {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: -100%;
+
+  inline-size: 280px;
+  block-size: 100vh;
+  margin-block: 0;
+  padding: 15px;
+
+  background-color: #fff;
+  overflow-y: auto;
+  list-style: none;
+  transition: inset-inline-start 0.2s;
+}
+
+.sideOpened .side__list {
+  inset-inline-start: 0;
+}
+
+.side__link {
+  display: block;
+  padding-block: 15px;
+
+  color: var(--fontColor-main);
+  text-decoration: none;
+  fill: var(--brand-color);
+}
+
+.side__icon {
+  inline-size: 20px;
+  block-size: 20px;
+}

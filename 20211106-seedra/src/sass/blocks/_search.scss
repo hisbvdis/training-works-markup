@@ -1,0 +1,24 @@
+.search {
+  position: relative;
+
+  margin-block: 0;
+}
+
+.search__input {
+  display: block;
+  inline-size: 100%;
+  padding-inline-start: 60px;
+  padding-block: 11px;
+
+  font-size: var(--fontSize-14);
+
+  border: 1px solid var(--grey-light);
+  border-radius: 71px;
+}
+
+.search__icon {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 24px;
+  transform: translateY(-50%);
+}

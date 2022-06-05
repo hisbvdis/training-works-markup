@@ -1,0 +1,67 @@
+:root {
+  font-size: 6.25%; /*1rem = 1px*/
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0 10px;
+  
+  font-family: Georgia;
+  font-size: 13rem;
+  line-height: 1.4;
+  color: #999999;
+
+  overflow-y: scroll;
+
+  background: #313131;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
+.srOnly {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+
+
+@media (min-width: $desktop) {
+  body {
+    padding-inline: 20px;
+  }
+}

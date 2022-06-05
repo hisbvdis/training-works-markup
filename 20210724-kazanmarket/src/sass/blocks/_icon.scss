@@ -1,0 +1,79 @@
+// div.icon
+.icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 50px;
+  block-size: 50px;
+  margin: 0;
+  
+  border: 2px solid var(--brand-color);
+  border-radius: 50%;
+}
+
+.icon--bdBlack {
+  border: 1px solid #000;
+}
+
+.icon--bgBrand {
+  background-color: var(--brand-color);
+}
+
+
+// p.icon__inner
+.icon__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  inline-size: 80%;
+  block-size: 80%;
+  margin: 0;
+  
+  border: 2px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-bg);
+}
+
+.icon__inner--bgBrand {
+  background-color: var(--brand-color);
+}
+
+.icon__inner--bgWhite {
+  background-color: #fff;
+}
+
+.icon__inner--bdBrand {
+  border-color: var(--brand-color);
+}
+
+
+// span.icon__text
+.icon__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.icon__text--black {
+  color: #000;
+}
+
+
+// svg.icon__img
+// img.icon__img
+.icon__img {
+  fill: #000;
+}
+
+.icon__img--white {
+  fill: #fff;
+}
+
+.icon__img--brand {
+  fill: var(--brand-color);
+}

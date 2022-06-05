@@ -1,0 +1,55 @@
+.hero {
+}
+
+.hero__container {
+  position: relative;
+  
+  block-size: 400px;
+}
+
+.innerPage .hero__container {
+  block-size: 300px;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__triangle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  
+  inline-size: 100%;
+  block-size: 32px;
+}
+
+
+@media (min-width: $tablet) {
+  .hero__container {
+    block-size: 500px;
+  }
+  
+  .hero__title {
+    inline-size: 460px;
+    block-size: 350px;
+  }
+
+  .hero__triangle {
+    block-size: 57px;
+  }
+}

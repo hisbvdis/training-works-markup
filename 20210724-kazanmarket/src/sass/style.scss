@@ -1,0 +1,59 @@
+// Base
+@import "base/_fonts.scss";
+@import "base/_variables.scss";
+@import "base/_base.scss";
+// @import "base/_dev.scss";
+
+// Common
+@import "blocks/_modal.scss";
+@import "blocks/_carousel.scss";
+@import "blocks/_manager.scss";
+@import "blocks/_list.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_icon.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_link.scss";
+
+// Section
+@import "blocks/_section.scss";
+@import "blocks/_container.scss";
+@import "blocks/_sectionTitle.scss";
+
+// Header
+@import "blocks/_cart.scss";
+@import "blocks/_header.scss";
+@import "blocks/_sideBtn.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_info.scss";
+@import "blocks/_side.scss";
+
+// Hero
+@import "blocks/_hero.scss";
+@import "blocks/_gift.scss";
+
+// Conditions
+@import "blocks/_conditions.scss";
+
+// service
+@import "blocks/_service.scss";
+
+// Cards
+@import "blocks/_cards.scss";
+
+// Quality
+@import "blocks/_quality.scss";
+@import "blocks/_fake.scss";
+
+// Catalog
+@import "blocks/_discount.scss";
+@import "blocks/_catalog.scss";
+@import "blocks/_card.scss";
+
+// Map
+@import "blocks/_map.scss";
+
+// Footer
+@import "blocks/_footer.scss";
+
+// FAQ
+@import "blocks/_faq.scss";

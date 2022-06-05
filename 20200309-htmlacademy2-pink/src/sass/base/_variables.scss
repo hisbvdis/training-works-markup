@@ -1,0 +1,12 @@
+// Colors
+$primaryColor: #283645;
+$navTextColor: #ffffff;
+$hoverColor: #d22856;
+$activeColor: rgba(255, 255, 255, 0.3);
+$sectionBg: #f2f2f2;
+
+// Screen breakpoints
+$desktop: 1200px;
+$tablet: 660px;
+$tablet--max: $desktop - 1;
+$mobile--max: $tablet - 1;

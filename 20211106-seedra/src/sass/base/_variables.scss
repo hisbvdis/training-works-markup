@@ -1,0 +1,47 @@
+:root {
+  //  Colors
+  --grey-light: #EFEFEF;
+  --gray: #D3D3D3;
+  --white: #ffffff;
+  --green-lighter: #EAF1EB;
+  --green-light: #EFF7F0;
+  
+  --red: #E55C5C;
+
+
+  // Brand color
+  --brandColor-opacity-8: #35974008;
+  --brandColor: #359740;
+
+  --brandColor-hover: #2BB159;
+  --brandColor-active: #4FA083;
+
+
+  // Font color
+  --fontColor-primary: #1F2533;
+  --fontColor-secondary: #70737C;
+
+
+  // Font size
+  --fontSize-14: 14rem;
+  --fontSize-16: 16rem;
+  --fontSize-18: 18rem;
+  --fontSize-22: 22rem;
+  --fontSize-24: 24rem;
+  --fontSize-28: 28rem;
+  --fontSize-32: 32rem;
+  --fontSize-36: 36rem;
+
+
+  // Font weight  (font-variation-settings)
+  --fontWeight-light: "wght" 300;
+  --fontWeight-regular: "wght" 400;
+  --fontWeight-medium: "wght" 500;
+  --fontWeight-semiBold: "wght" 600;
+}
+
+
+// Screen media breakpoints
+$desktop: 950px;
+$tablet: 768px;
+$tablet-max: $desktop - 1;

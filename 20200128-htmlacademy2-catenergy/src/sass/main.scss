@@ -1,0 +1,24 @@
+// Base styles
+@import "base/variables";
+@import "base/_base.scss";
+@import "base/_fonts.scss";
+
+// Blocks
+@import "blocks/_btn.scss";
+@import "blocks/_section.scss";
+@import "blocks/_header.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_categories.scss";
+@import "blocks/_how.scss";
+@import "blocks/_navBtn.scss";
+@import "blocks/_example.scss";
+@import "blocks/_toggler.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_pageTitle.scss";
+@import "blocks/_catalog.scss";
+@import "blocks/_additional.scss";
+@import "blocks/_field.scss";
+@import "blocks/_form.scss";
+@import "blocks/_option.scss";

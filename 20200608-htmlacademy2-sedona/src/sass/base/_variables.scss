@@ -1,0 +1,14 @@
+:root {
+  // Colors
+  --brandColor: #81b3d2;
+  
+  // Text colors
+  --primaryTextColor: #000;
+  --textOnBrandColor: #fff;
+}
+
+// Screen breakpoints
+$desktop: 1200px;
+$tablet: 768px;
+$tablet--max: $desktop - 1;
+$mobile--max: $tablet - 1;

@@ -1,0 +1,48 @@
+.slideBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 30px;
+  block-size: 30px;
+
+  background: #000;
+  border: 2px solid #a7c353;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slideBtn:hover {
+  background: #6f842e;
+}
+
+.slideBtn:active {
+  background: #a7c353;
+}
+
+.slideBtn__arrow {
+  inline-size: 8px;
+  
+  fill: #a7c353;
+}
+
+
+
+// Only mouse
+@media (hover: hover) {
+  
+}
+
+
+
+// Desktop
+@media (min-width: $desktop) {
+  .slideBtn {
+    inline-size: 50px;
+    block-size: 50px;
+  }
+
+  .slideBtn__arrow {
+    inline-size: 15px;
+  }
+}

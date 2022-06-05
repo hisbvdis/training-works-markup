@@ -1,0 +1,45 @@
+.sideBtn {
+  position: relative;
+
+  flex-shrink: 0;
+  inline-size: 50px;
+  block-size: 50px;
+  padding: 0;
+
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sideBtn:is(:hover, :focus) {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.sideBtn:active {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.sideBtn__line {
+  position: absolute;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  inline-size: 30px;
+  block-size: 4px;
+
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.sideBtn__line--1 {
+  inset-block-start: calc(50% - 10px);
+}
+
+.sideBtn__line--2 {
+  inset-block-start: 50%;
+}
+
+.sideBtn__line--3 {
+  inset-block-start: calc(50% + 10px);
+}

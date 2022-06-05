@@ -1,0 +1,29 @@
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__group:last-child .field {
+  margin-bottom: 0;
+}
+
+.field__name {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.field__input {
+  flex-grow: 1;
+  padding: 15px;
+
+  border: 1px solid var(--secondaryColor--dark);
+}
+
+.field__textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+
+  border: 1px solid var(--secondaryColor--dark);
+}

@@ -1,0 +1,38 @@
+.slogan {
+  padding: 40px 0 70px;
+}
+
+.slogan__text {
+  max-width: 750px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet) {
+  .slogan {
+    padding-bottom: 100px;
+  }
+  
+  .slogan__text {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 300;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .slogan {
+    margin-bottom: 150px;
+  }
+
+  .slogan__text {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+}

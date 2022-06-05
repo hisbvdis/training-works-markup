@@ -1,0 +1,117 @@
+@import "variables.scss";
+
+.login {
+  padding: 32px 20px;
+}
+
+.login__section-title {
+  margin-bottom: 14px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login__subtitle {
+  margin: 0 0 24px;
+
+  text-align: center;
+}
+
+.login-form__field::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  transform: translateY(-50%);
+
+  background: url("../img/sprite.svg") no-repeat;
+}
+
+.login-form__field--login::after {
+  width: 15px;
+  height: 15px;
+
+  background-position: -163px -61px;
+}
+
+.login-form__field--pass::after {
+  width: 15px;
+  height: 17px;
+
+  background-position: -163px -40px;
+}
+
+.login-form__remember-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 26px 0 29px;
+}
+
+.login-form__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.login-form__submit-btn,
+.login__close-btn {
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.login-form__submit-btn-text {
+  display: none;
+}
+
+.login-form__pass-remember {
+  color: #000;
+  text-decoration: underline;
+}
+
+.login__control--custom {
+  margin-right: 15px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .login {
+    padding: 53px 70px;
+  }
+
+  .login-form__submit-btn {
+    flex-basis: 100%;
+  }
+
+  .login-form__submit-btn-text {
+    display: inline;
+  }
+
+  .login__close-btn {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 15px);
+
+    width: 26px;
+    height: 26px;
+    padding: 0;
+
+    background: url("../img/sprite.svg") no-repeat;
+    border: none;
+  }
+
+  .login__close-btn-text {
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: none;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}

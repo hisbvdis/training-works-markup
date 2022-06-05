@@ -1,0 +1,1 @@
+let page=document.querySelector(".page"),navBtn=document.querySelector(".navBtn");function navBtn_Click_Handler(){page.classList.toggle("openedNav")}navBtn.addEventListener("click",navBtn_Click_Handler);

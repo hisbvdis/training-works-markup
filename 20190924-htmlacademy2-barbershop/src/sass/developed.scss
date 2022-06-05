@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.developed__title {
+  text-align: center;
+}
+
+.developed__link {
+  display: block;
+
+  color: #fff;
+
+  border: 1px solid #3f3f3f;
+}
+
+
+@media (min-width: $tablet-width) {
+  .developed__title {
+    margin: 0 0 15px;
+  }
+}

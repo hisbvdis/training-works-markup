@@ -1,0 +1,25 @@
+.about__img {
+  display: block;
+  margin-inline: auto;
+}
+
+
+@media (min-width: $tablet) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+  }
+
+  .about__description {
+    font-size: var(--fontSize-16);
+  }
+
+  .about__img {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    inline-size: 80%;
+    block-size: auto;
+  }
+}

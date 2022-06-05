@@ -1,0 +1,37 @@
+{
+  "name": "20210413-altexsoft-clearcut",
+  "version": "0.0.1",
+  "description": "UI test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisbvdis/20210413-AltexSoft-Clearcut.git"
+  },
+  "author": "Zvarich Roma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hisbvdis/20210413-AltexSoft-Clearcut/issues"
+  },
+  "homepage": "https://github.com/hisbvdis/20210413-AltexSoft-Clearcut#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "htmlmin": "0.0.7",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^7.0.1"
+  }
+}

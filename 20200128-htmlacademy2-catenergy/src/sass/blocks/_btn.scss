@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+
+  font-family: "Oswald Variable";
+  font-variation-settings: "wght"300;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+
+  background: var(--brandColor);
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--brandColor--darker);
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (min-width: 0) and (max-width: $mobileWidth--max) {
+  .btn {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $tabletWidth) {
+  .btn {
+    padding: 16px 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

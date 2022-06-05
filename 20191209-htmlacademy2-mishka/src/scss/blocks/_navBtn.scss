@@ -1,0 +1,84 @@
+@import "../base/_variables.scss";
+
+.navBtn {
+  display: none;
+  // position: relative;  // Set in block class
+
+  background: none;
+  border: none;
+}
+
+.navBtn__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 2px;
+
+  background: #000;
+
+  transition: background 0.2s;
+}
+
+.nav--opened .navBtn__line {
+  width: 25px;
+  
+  background: transparent;
+}
+
+.navBtn__line::before,
+.navBtn__line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 20px;
+  height: 2px;
+
+  background: #000;
+}
+
+.navBtn__line::before {
+  top: -6px;
+
+  transition: transform 0.1s, top 0.1s 0.1s;
+}
+
+.navBtn__line::after {
+  top: 6px;
+
+  transition: transform 0.1s, top 0.1s 0.1s;
+}
+
+.nav--opened .navBtn__line::before,
+.nav--opened .navBtn__line::after {
+  top: 0;
+
+  width: 25px;
+}
+
+.nav--opened .navBtn__line::before {
+  transform: rotate(-45deg);
+
+  transition: top 0.1s, transform 0.1s 0.1s;
+}
+
+.nav--opened .navBtn__line::after {
+  transform: rotate(45deg);
+
+  transition: top 0.1s, transform 0.1s 0.1s;
+}
+
+
+// Mobile only
+@media (max-width: $mobileWidth--max) {
+  .navBtn {
+    display: block;
+  }
+
+  .nav--nojs .navBtn {
+    display: none;
+  }
+}

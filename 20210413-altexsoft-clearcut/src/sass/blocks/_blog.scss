@@ -1,0 +1,39 @@
+.blog__list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.blog__item {
+  margin-block-end: 20px;
+}
+
+.blog__title {
+  margin: 0;
+
+  font-size: 13rem;
+  line-height: 15.6rem;
+  font-weight: 600;
+}
+
+.blog__author {
+  margin: 5px 0;
+
+  font-size: 11rem;
+  line-height: 13.2rem;
+}
+
+.blog__text {
+  margin: 0 0 5px;
+}
+
+.blog__footer {
+  margin: 0;
+
+  text-align: end;
+}
+
+.block__link {
+  text-decoration: none;
+}

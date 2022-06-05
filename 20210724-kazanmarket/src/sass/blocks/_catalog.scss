@@ -1,0 +1,52 @@
+.catalog {
+  font-family: "Gilroy", sans-serif;
+}
+
+.catalog__sectionTitle {
+  margin-block-end: 25px;
+}
+
+.catalog__titleLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-block-end: clamp(30px, 3vw, 50px);
+}
+
+.catalog__family {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 20px;
+  padding: 7px 15px;
+  
+  background-color: #fff;
+  box-shadow: var(--shadow-bg);
+  border-radius: var(--borderRadius-10);
+}
+
+.catalog__icon {
+  inline-size: 67px;
+  block-size: 67px;
+}
+
+.catalog__familyText {
+  font-size: var(--fontSize-14-24);
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+
+@media (min-width: $screen-middle){
+  .catalog__titleLinks {
+    flex-direction: row;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+}

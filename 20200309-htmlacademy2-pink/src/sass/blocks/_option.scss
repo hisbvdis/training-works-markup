@@ -1,0 +1,80 @@
+.option {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form__optionsItem:last-child  .option {
+  margin-bottom: 0;
+}
+
+.option__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.option__indicator {
+  position: relative;
+  
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+
+  background: #fff;
+  border: 2px solid #e5e5e5;
+}
+
+.option__indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.option__input:checked  +  .option__indicator--checkbox::before {
+  transform: translate(-50%, -70%) rotate(-45deg);
+  
+  width: 62%;
+  height: 28%;
+  
+  border-left: 2px solid $hoverColor;
+  border-bottom: 2px solid $hoverColor;
+}
+
+.option__indicator--radio {
+  border-radius: 50%;
+}
+
+.option__input:checked  +  .option__indicator--radio::before {
+  transform: translate(-50%, -50%);
+  
+  width: 45%;
+  height: 45%;
+  
+  background: $hoverColor;
+  border-radius: 50%;
+}
+
+.option__name {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+@media (hover: hover) {
+  .option {
+    cursor: pointer;
+  }
+}

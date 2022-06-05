@@ -1,0 +1,108 @@
+.promo {
+  padding: 15px;
+  margin-block-end: 15px;
+  
+  border-radius: 24px;
+  background: 
+    url("../img/promo-leefs-mobile.webp") top left no-repeat,
+    var(--green-lighter);
+}
+
+.promo__img {
+  display: block;
+  inline-size: 188px;
+  block-size: auto;
+  margin-inline: auto;
+}
+
+.promo__title {
+  margin-block: 0 10px;
+  
+  font-size: 28rem;
+  line-height: 1.29;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.promo__description {
+  margin-block: 0 10px;
+
+  font-size: var(--fontSize-14);
+  line-height: 2;
+  font-variation-settings: var(--fontWeight-light);
+}
+
+.promo__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 0 10px;
+
+  font-variation-settings: var(--fontWeight-semiBold);
+}
+
+.promo__newPrice {
+  font-size: var(--fontSize-32);
+  line-height: 1.05;
+  color: var(--red);
+}
+
+.promo__oldPrice {
+  font-size: var(--fontSize-22);
+  line-height: 2.45;
+  color: var(--fontColor-secondary);
+  text-decoration: line-through;
+}
+
+.promo__btns {
+  display: flex;
+  align-items: center;
+  margin-block: 0;
+  gap: 12px;
+}
+
+.promo__brandBtn {
+  inline-size: 153px;
+}
+
+.promo__addBtn {
+  inline-size: 131px;
+}
+
+
+@media (min-width: $tablet) {
+  .promo {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: repeat(4, auto);
+    padding: 50px 10px 50px 75px;
+
+    background: 
+    url("../img/promo-leefs-desktop.webp") bottom right no-repeat,
+    var(--green-lighter);
+  }
+
+  .promo__img {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    inline-size: 349px;
+  }
+  
+  .promo__title {
+    font-size: 48rem;
+    line-height: 1.13;
+  }
+
+  .promo__description {
+    font-size: 16rem;
+    line-height: 1.75;
+  }
+
+  .promo__price {
+    gap: 20px;
+  }
+
+  .promo__newPrice {
+    color: var(--fontColor-primary);
+  }
+}

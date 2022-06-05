@@ -1,0 +1,49 @@
+.carousel {
+  
+}
+
+.carousel__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 25px;
+}
+
+.carousel__btn {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 50px;
+  block-size: 50px;
+  padding: 0;
+
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: var(--shadow-bg);
+}
+
+.carousel__buttonsTip {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: var(--fontSize-10);
+}
+
+
+@media (min-width: 0) and (max-width: $screen-middle){
+  .carousel__item {
+    display: none;
+  }
+
+  .carousel__item--visible {
+    display: block;
+  }
+}
+
+
+@media (min-width: $screen-middle){
+  .carousel__buttons {
+    display: none;
+  }
+}

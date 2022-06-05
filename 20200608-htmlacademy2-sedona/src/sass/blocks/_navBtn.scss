@@ -1,0 +1,73 @@
+.navBtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(calc(-50% + 0.5px));
+  
+  display: block;
+  inline-size: 26px;
+  block-size: 19px;
+  margin: 0;
+  padding: 0;
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav--noJS .navBtn {
+  display: none;
+}
+
+.navBtn__line {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  inline-size: 100%;
+  block-size: 3px;
+
+  background: var(--brandColor);
+  transition: 0.25s;
+}
+
+.navBtn__line--1 {
+  top: 0;
+}
+
+.navBtn__line--2 {
+  top: 50%;
+  transform: translateY(calc(-50% - 0.5px));
+}
+
+.navBtn__line--3 {
+  bottom: 0;
+}
+
+
+// .nav--opened
+.nav--opened .navBtn__line--1,
+.nav--opened .navBtn__line--3 {
+  top: 50%;
+  left: 50%;
+}
+
+.nav--opened .navBtn__line--1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nav--opened .navBtn__line--2 {
+  opacity: 0;
+}
+
+.nav--opened .navBtn__line--3 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+// From tablet
+@media(min-width: $tablet) {
+  .navBtn {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.search {
+  padding: 50px;
+  
+  text-align: center;
+}
+
+.search__container {
+  max-inline-size: 500px;
+  padding: 30px 20px;
+}
+
+.search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search__subTitle {
+  margin-block-end: 40px;
+}
+
+.search__btn {
+  inline-size: 100%;
+  padding: 15px;
+  
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--textOnBrandColor);
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  background: #81b3d2;
+  border: none;
+  cursor: pointer;
+}

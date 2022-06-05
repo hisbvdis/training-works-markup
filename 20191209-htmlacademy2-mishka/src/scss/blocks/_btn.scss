@@ -1,0 +1,46 @@
+.btn {
+  display: inline-block;
+  padding: 14px 15px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444;
+  text-align: center;
+
+  background: #fff;
+  border: 2px solid #444;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  
+  background: #444;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn--brandColor {
+  color: #fff;
+  
+  background: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.btn--brandColor:hover,
+.btn--brandColor:focus {
+  background: $secondaryColor;
+  border-color: $secondaryColor;
+}
+
+
+// Mobile only
+@media (max-width: $mobileWidth--max) {
+  .btn {
+    width: 100%;
+  }
+}

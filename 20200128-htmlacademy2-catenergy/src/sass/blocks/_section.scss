@@ -1,0 +1,36 @@
+.section__container {
+  display: flow-root;
+  padding: 0 20px;
+}
+
+.section__title {
+  margin: 0 0 30px;
+  
+  font-family: "Oswald Variable";
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .section__container {
+    padding: 0 30px;
+  }
+
+  .section__title {
+    margin: 0 0 30px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .section__container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}

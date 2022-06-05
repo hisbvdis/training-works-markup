@@ -1,0 +1,36 @@
+.review__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.review__item {
+  margin-block-end: 20px;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  margin-block-end: 5px;
+}
+
+.review__quote {
+  margin-inline-end: 15px;
+  
+  fill: #d4d4d4;
+}
+
+.review__name {
+  margin: 0;
+  
+  font-size: 16rem;
+  line-height: 19.2rem;
+  color: #989898;
+}
+
+.review__text {
+  margin: 0;
+
+  color: #888888;
+}

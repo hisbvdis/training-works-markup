@@ -1,0 +1,32 @@
+.pageTitle {
+  padding: 10px 0 20px;
+
+  border-bottom: 1px solid var(--secondaryColor--middle);
+}
+
+.pageTitle__text {
+  margin: 0;
+
+  font-family: "Oswald Variable";
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .pageTitle {
+    border-bottom: none;
+  }
+
+  .pageTitle__text {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .pageTitle__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

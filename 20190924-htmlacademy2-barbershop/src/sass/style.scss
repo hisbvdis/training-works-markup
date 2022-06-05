@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow";
+  font-size: 18px;
+  line-height: 27px;
+  color: $font-color--primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: none;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+
+@import "fonts.scss";
+@import "btn.scss";
+@import "container.scss";
+@import "section-header.scss";
+@import "section-title.scss";
+@import "modal.scss";
+@import "modal-underlay.scss";
+@import "form.scss";
+@import "option.scss";
+
+@import "header.scss";
+@import "nav.scss";
+@import "site-nav.scss";
+@import "user-panel.scss";
+@import "main.scss";
+@import "hero.scss";
+@import "stats.scss";
+@import "advantages.scss";
+@import "slider.scss";
+@import "news.scss";
+@import "reviews.scss";
+@import "footer.scss";
+@import "contacts.scss";
+@import "social.scss";
+@import "developed.scss";
+@import "login.scss";
+@import "appt.scss";
+@import "portfolio.scss";
+@import "price.scss";

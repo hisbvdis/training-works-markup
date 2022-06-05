@@ -1,0 +1,32 @@
+.list {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+.list__item {
+  position: relative;
+
+  margin-block-end: 10px;
+  padding-inline-start: 2em;
+  
+  counter-increment: my-counter;
+}
+
+.list__item::before {
+  content: counter(my-counter);
+  position: absolute;
+  inset-inline-start: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 1.5em;
+  block-size: 1.5em;
+
+  font-size: var(--fontSize-12-24);
+  font-weight: 700;
+  color: #fff;
+
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}

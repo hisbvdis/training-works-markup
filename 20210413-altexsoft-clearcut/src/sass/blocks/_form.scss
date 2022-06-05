@@ -1,0 +1,22 @@
+.form {
+  padding: 10px 0;
+}
+
+.form__submit {
+  padding: 0.5em;
+
+  color: #313131;
+  text-transform: uppercase;
+  
+  background: #a7c353;
+  border: none;
+  border-radius: 3px;
+}
+
+.form__submit:hover {
+  background: #6f842e;
+}
+
+.form__submit:active {
+  background: #4f5e21;
+}

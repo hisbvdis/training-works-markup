@@ -1,0 +1,68 @@
+@import "variables.scss";
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts__title {
+  display: block;
+  margin: 0 0 10px;
+
+  font-weight: 700;
+}
+
+.contacts__address {
+  margin: 0 auto 18px;
+
+  font-style: normal;
+}
+
+.contacts__phone {
+  display: block;
+
+  color: $font-color--secondary;
+  font-style: normal;
+
+  border: 1px solid #3f3f3f;
+}
+
+
+// Only mobile
+@media (min-width: 0) and (max-width: $mobile-width--max) {
+  .contacts {
+    text-align: center;
+  }
+
+  .contacts__phone-prefix {
+    display: none;
+  }
+
+  .contacts__address {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    text-transform: uppercase;
+  }
+
+  .contacts__address {
+    margin-bottom: 0;
+  }
+
+  .contacts__phone {
+    display: inline;
+    padding: 0;
+
+    font-weight: 400;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 0;
+  }
+}

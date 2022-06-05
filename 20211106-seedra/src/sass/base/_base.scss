@@ -1,0 +1,42 @@
+/* Box-sizing */
+html { box-sizing: border-box }
+*, *::before, *::after {box-sizing: inherit}
+
+
+body {
+  font-family: "Lexend";
+  font-variation-settings: var(--fontWeight-regular);
+  font-size: 16rem;
+  line-height: 1.75;
+
+  min-inline-size: 320px;
+  margin: 0;
+
+  overflow-y: scroll;
+}
+
+
+/* Размер шрифта 1rem=1px */
+/* "rem" - если в браузере изменён размер шрифта по умолчанию, чтобы сохранялись пропорции */
+:root { font-size: 6.25% }
+body  { font-size: 14rem }
+
+
+/* Наследование шрифтов */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Размеры изображений */
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}

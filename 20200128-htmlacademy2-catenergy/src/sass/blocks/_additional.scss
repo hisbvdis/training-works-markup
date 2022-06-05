@@ -1,0 +1,171 @@
+.additional__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.additional__sectionTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.additional__table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.additional__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  border-top: 1px solid var(--secondaryColor--middle);
+}
+
+.additional__row:last-child {
+  border-bottom: 1px solid var(--secondaryColor--middle);
+}
+
+.additional__title {
+  margin-bottom: 10px;
+  
+  font-family: "Oswald Variable";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.additional__info {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.additional__infoPack {
+  margin: 0;
+}
+
+.additional__infoPrice {
+  margin: 0;
+}
+
+.additional__linkCell {
+  flex-basis: 100%;
+}
+
+.additional__link {
+  width: 100%;
+}
+
+.additional__promo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+
+  background: url("../img/additional__promo.jpg") center / cover no-repeat;
+}
+
+.additional__promoImg {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+
+  fill: #fff;
+}
+
+.additional__promoText {
+  margin: 0;
+  
+  color: #fff;
+  text-align: center;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .additional__sectionTitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  
+  .additional__title {
+    flex-basis: 50%;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .additional__info {
+    flex-basis: 50%;
+    justify-content: flex-end;
+
+    font-size: 16px;
+  }
+
+  .additional__infoPack {
+    margin-right: 50px;
+  }
+
+  .additional__row {
+    padding: 40px;
+    
+    border: 1px solid var(--secondaryColor--middle);
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .additional__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional__sectionTitle {
+    flex-basis: 100%;
+  }
+
+  .additional__table {
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  
+  .additional__row {
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    justify-content: space-between;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional__title {
+    flex-basis: 25%;
+  }
+
+  .additional__info {
+    flex-basis: 25%;
+  }
+
+  .additional__infoPack {
+    flex-shrink: 0;
+  }
+
+  .additional__infoPrice {
+    flex-shrink: 0;
+  }
+
+  .additional__linkCell {
+    max-width: 245px;
+    // margin-left: auto;
+  }
+
+  .additional__promo {
+    width: 245px;
+    flex-shrink: 0;
+  }
+}

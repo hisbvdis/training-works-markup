@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $font-color--primary;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: transparent;
+  border: 1px solid #e5ddd5;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #d5c9bd;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5c9bd;
+}
+
+.btn--brand {
+  color: #fff;
+
+  background: #826550;
+}
+
+.btn--brand:hover {
+  background: #6a4d38;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .btn--biger {
+    padding: 22px 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

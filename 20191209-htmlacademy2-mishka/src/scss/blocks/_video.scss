@@ -1,0 +1,115 @@
+.video__container {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.video__inner {
+  border: 1px solid #ececec;
+}
+
+.video__inner:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video__header {
+  display: flex;
+  align-items: center;
+  padding: 24px 30px;
+}
+
+.video__header--bottom {
+  display: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.video__title {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.video__camIcon {
+  width: 48px;
+  height: 33px;
+  margin-right: 25px;
+
+  fill: $primaryColor;
+}
+
+.video__pic {
+  margin: 0;
+  padding: 0;
+}
+
+.video__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.video__info {
+  padding: 30px 35px;
+}
+
+.video__desc {
+  margin: 0 0 20px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.video__btn {
+  width: 100%;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .video__header--top {
+    display: none;
+  }
+
+  .video__header--bottom {
+    display: flex;
+  }
+
+  .video__pic {
+    height: 455px;
+  }
+
+  .video__desc {
+    margin: 0 0 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .video__inner {
+    display: flex;
+  }
+
+  .video__pic {
+    flex-basis: 682px;
+    flex-shrink: 0;
+  }
+
+  .video__info {
+    padding: 70px;
+  }
+
+  .video__header--bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video__camIcon {
+    margin: 0 0 20px;
+  }
+}

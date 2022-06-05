@@ -1,0 +1,1 @@
+var navBtn=document.querySelector(".navBtn"),nav=document.querySelector(".nav");function navOpenedRemove(){nav.classList.remove("nav--opened"),nav.classList.remove("nav--noJS")}navBtn.onclick=function(){nav.classList.toggle("nav--opened")},document.onload=navOpenedRemove();

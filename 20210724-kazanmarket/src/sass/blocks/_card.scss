@@ -1,0 +1,103 @@
+.card {
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: #fff;
+  box-shadow: var(--shadow-bg);
+  border-radius: var(--borderRadius-10);
+}
+
+.card__img {
+  block-size: 200px;
+  margin-block-end: 10px;
+
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+.card__itemTitle {
+  margin-block-end: 5px;
+  
+  font-size: var(--fontSize-24);
+  font-weight: 700;
+}
+
+.card__persons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-block-end: 20px;
+  
+  font-size: var(--fontSize-14);
+}
+
+.card__featureList {
+  margin-block-end: 10px;
+  
+  font-size: var(--fontSize-14);
+  
+  background-color: #F8F8F8;
+  border-radius: var(--borderRadius-10);
+}
+
+.card__feature {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 9px;
+}
+
+.card__feature + .card__feature {
+  border-block-start: 1px solid #00000030;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13px;
+  margin-block-end: 15px;
+}
+
+.card__prevPrice {
+  font-weight: 600;
+  color: #00000050;
+  text-decoration: 1px line-through #FF0000;
+}
+
+.card__currentPrice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding: 5px 10px;
+
+  border: 1px solid var(--brand-color);
+  border-radius: var(--borderRadius-10);
+}
+
+.card__amount {
+  font-size: var(--fontSize-24);
+  font-weight: 600;
+}
+
+.card__currency {
+  font-size: var(--fontSize-18);
+}
+
+.card__priceDesc {
+  font-size: var(--fontSize-12);
+  text-align: start;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card__btn {
+  flex-grow: 1;
+}

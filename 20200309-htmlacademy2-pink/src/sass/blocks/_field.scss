@@ -1,0 +1,21 @@
+.field__name {
+  margin: 0 0 5px 15px;
+  
+  color: $hoverColor;
+  text-transform: uppercase;
+}
+
+.field__input,
+.field__textarea {
+  width: 100%;
+  padding: 15px 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  
+  border: 2px solid #e5e5e5;
+}
+
+.field__textarea {
+  min-height: 200px;
+}

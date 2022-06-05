@@ -1,0 +1,1 @@
+"use strict";var navBtn=document.querySelector(".navBtn"),nav=document.querySelector(".nav");function removeNavOpened(){nav.classList.remove("nav--opened"),nav.classList.remove("nav--nojs")}navBtn.addEventListener("click",function(e){e.preventDefault(),nav.classList.toggle("nav--opened")}),window.onload=removeNavOpened();

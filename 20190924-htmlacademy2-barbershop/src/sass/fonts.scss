@@ -1,0 +1,22 @@
+// Fonts
+@font-face {
+  font-family: 'Roboto';
+  font-style: "normal";
+  font-weight: 400;
+  font-display: swap;
+  src: 
+    local('Roboto'),
+    local('Roboto-Regular'),
+    url('/public/fonts/PTSansNarrow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: 'normal';
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Roboto'),
+    local('Roboto-Bold'),
+    url('/public/fonts/PTSansNarrow-Bold.ttf');
+}

@@ -1,0 +1,137 @@
+.quality {
+  padding-block-end: 10px;
+  
+  font-family: "Gilroy", sans-serif;
+}
+
+.quality__sectionTitle {
+  margin-block-end: 10px;
+  
+  text-align: center;
+}
+
+.quality__subTitle {
+  margin-block-end: 20px;
+  
+  font-size: var(--fontSize-13-18);
+  text-align: center;
+}
+
+.quality__manager {
+  justify-content: center;
+}
+
+.quality__poster {
+  display: block;
+  inline-size: min(100%, 681px);
+  block-size: auto;
+  margin-inline: auto;
+  margin-block-end: 10px;
+}
+
+.quality__cast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 20px;
+}
+
+.quality__castIcon {
+  inline-size: clamp(84px, 10vw, 176px);
+  block-size: clamp(84px, 10vw, 176px);
+}
+
+.quality__castText {
+  max-inline-size: 400px;
+  
+  font-size: var(--fontSize-13-24);
+}
+
+.quality__iconText {
+  font-size: var(--fontSize-18-36);
+}
+
+.quality__list {
+  list-style: none;
+}
+
+.quality__itemInner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quality__info {
+  margin-block: 0;
+}
+
+.quality__name {
+  display: block;
+
+  font-size: var(--fontSize-18-24);
+  font-weight: 600;
+}
+
+.quality__icon {
+  inline-size: 110px;
+  block-size: 110px;
+}
+
+.quality__footer {
+  text-align: center;
+}
+
+.quality__footerBtn {
+  margin-block-end: clamp(20px, 2.5vw, 30px);
+}
+
+.quality__footerLink {
+  display: block;
+}
+
+.quality__main {
+  margin-block-end: 40px;
+}
+
+
+@media (min-width: $screen-middle){
+  .quality {
+    padding-block-end: 50px;
+  }
+
+  .quality__main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: 30px;
+  }
+
+  .quality__poster {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    margin-inline: revert;
+  }
+
+  .quality__cast {
+    grid-column: 1 / span 2;
+    margin-block-end: unset;
+  }
+
+  .quality__wrapper {
+    grid-column: 3 / span 1;
+    grid-row: 1 / -1;
+  }
+
+  .quality__footer {
+    grid-column: 2 / span 1;
+    padding-block-start: 50px;
+  }
+
+  .quality__castText {
+    text-align: center;
+  }
+
+  .quality__item + .quality__item {
+    margin-block-start: clamp(10px, 2vw, 30px);
+  }
+}

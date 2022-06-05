@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/nav.js" defer></script>
+  <script src="js/navlink_Click_Handler.js" defer></script>
+  <script src="js/carousel/thumb_Click_Handler.js" type="module"></script>
+  <script src="js/carousel/slideBtn_Click_handler.js" type="module"></script>
+  <title>Clearcut</title>
+</head>
+<body>
+
+<div class="page">
+  <header class="header  section">
+    <div class="header__logo">
+      <a class="logo" href="#">
+        <h1 class="logo__title  section__title">Clearcut</h1>
+        <span class="logo__subtitle">Free PSD Website Template</span>
+      </a>
+      <button class="navBtn  header__navBtn" type="button">
+        <!-- Линии бургера -->
+        <span class="navBtn__line  navBtn__line--1"></span>
+        <span class="navBtn__line  navBtn__line--2"></span>
+        <span class="navBtn__line  navBtn__line--3"></span>
+        <!-- Название кнопки -->
+        <span class="srOnly">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link  nav__link--active" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Style Demo</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Full Width</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Dropdown</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero  section">
+      <p class="hero__slogan  section__title">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque„</p>
+      <div class="carousel  hero__carousel">
+        <div class="slides  carousel__slides">
+          <div class="slides__inner">
+            <ul class="slides__list">
+              <li class="slides__item  slides__item--visible">
+                <img class="slides__img" src="img/carousel-1.jpg" width="920" height="350" alt="Guitar">
+                <div class="slides__info">
+                  <h3 class="slides__title">This Is A Very Long Slider Title-A</h3>
+                  <p class="slides__desc">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.-A</p>
+                </div>
+              </li>
+              <li class="slides__item">
+                <img class="slides__img" src="img/carousel-2.jpg" width="920" height="350" alt="Landscape">
+                <div class="slides__info">
+                  <h3 class="slides__title">This Is A Very Long Slider Title-B</h3>
+                <p class="slides__desc">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.-B</p>
+                </div>
+              </li>
+              <li class="slides__item">
+                <img class="slides__img" src="img/carousel-3.jpg" width="920" height="350" alt="Laptop">
+                <div class="slides__info">
+                  <h3 class="slides__title">This Is A Very Long Slider Title-C</h3>
+                <p class="slides__desc">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.-C</p>
+                </div>
+              </li>
+              <li class="slides__item">
+                <img class="slides__img" src="img/carousel-4.jpg" width="920" height="350" alt="Sky">
+                <div class="slides__info">
+                  <h3 class="slides__title">This Is A Very Long Slider Title-D</h3>
+                <p class="slides__desc">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.-D</p>
+                </div>
+              </li>
+            </ul>
+
+            <button class="slideBtn  slides__slideBtn  slides__slideBtn--prev" type="button">
+              <svg class="slideBtn__arrow" width="15" height="27">
+                <use xlink:href="./img/sprite.svg#slide-btn-prev" />
+              </svg>
+              <span class="slideBtn__name  srOnly">Предыдущий слайд</span>
+            </button>
+            <button class="slideBtn  slides__slideBtn  slides__slideBtn--next" type="button">
+              <span class="slideBtn__name  srOnly">Следующий слайд</span>
+              <svg class="slideBtn__arrow" width="15" height="27">
+                <use xlink:href="./img/sprite.svg#slide-btn-next" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="thumbs  carousel__thumbs">
+          <ul class="thumbs__list">
+            <li class="thumbs__item  thumbs__item--active">
+              <button class="thumbs__btn" type="button">
+                <span class="thumbs__name  srOnly">Слайд 1</span>
+              </button>
+            </li>
+            <li class="thumbs__item">
+              <button class="thumbs__btn" type="button">
+                <span class="thumbs__name  srOnly">Слайд 2</span>
+              </button>
+            </li>
+            <li class="thumbs__item">
+              <button class="thumbs__btn" type="button">
+                <span class="thumbs__name  srOnly">Слайд 3</span>
+              </button>
+            </li>
+            <li class="thumbs__item">
+              <button class="thumbs__btn" type="button">
+                <span class="thumbs__name  srOnly">Слайд 4</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="content">
+      <section class="about  section">
+        <h2 class="section__title">A little about us</h2>
+        <img class="about__img" src="img/about-us.jpg" alt="About us">
+        <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+        <p>Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+        <p class="section__linkWrapper">
+          <a class="link" href="#">Read More About Us »</a>
+        </p>
+      </section>
+
+      <section class="service  section">
+        <h2 class="section__title">Some of Our Service</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <img class="service__img" src="img/service-1.jpg" alt="Service 1">
+            <h3 class="service__title">Service Title</h3>
+            <p class="service__desc">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+          </li>
+          <li class="service__item">
+            <img class="service__img" src="img/service-2.jpg" alt="Service 2">
+            <h3 class="service__title">Service Title</h3>
+            <p class="service__desc">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+          </li>
+          <li class="service__item">
+            <img class="service__img" src="img/service-3.jpg" alt="Service 3">
+            <h3 class="service__title">Service Title</h3>
+            <p class="service__desc">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+          </li>
+          <li class="service__item">
+            <img class="service__img" src="img/service-4.jpg" alt="Service 4">
+            <h3 class="service__title">Service Title</h3>
+            <p class="service__desc">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+          </li>
+        </ul>
+        <p class="section__linkWrapper">
+          <a class="link" href="#">View All Of Our Services »</a>
+        </p>
+      </section>
+
+      <section class="review  section">
+        <h2 class="section__title">What Our Clients Say</h2>
+        <ul class="review__list">
+          <li class="review__item">
+            <div class="review__header">
+              <svg class="review__quote" width="53" height="44">
+                <use xlink:href="./img/sprite.svg#quote" />
+              </svg>
+              <p class="review__name">Tommy Tanker - CEO</p>
+            </div>
+            <p class="review__text">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+            <p class="section__linkWrapper">
+              <a class="link" href="#">View This Project »</a>
+            </p>
+          </li>
+          <li class="review__item">
+            <div class="review__header">
+              <svg class="review__quote" width="53" height="44">
+                <use xlink:href="./img/sprite.svg#quote" />
+              </svg>
+              <p class="review__name">Tommy Tanker - CEO</p>
+            </div>
+            <p class="review__text">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+            <p class="section__linkWrapper">
+              <a class="link" href="#">View This Project »</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="address  section">
+      <h2 class="section__title  section__title--footer">Company Details</h2>
+      <address>
+        <p>
+          Company Name<br />
+          Street Name & Number<br />
+          Town<br />
+          Postcode/Zip<br />
+        </p>
+        <p>
+          Tel: <a class="address__telfax" href="tel:88888888">xxxxx xxxxxxxxxx</a><br />
+          Fax: <a class="address__telfax" href="88888888">xxxxx xxxxxxxxxx</a><br />
+          Email: <a class="link  address__email" href="mailto:contact@mydomain.com">contact@mydomain.com</a>
+        </p>
+        <p>
+          <span class="address__hours">Office Hours</span><br />
+          Monday - Friday: 08:00 - 17:30<br />
+          Saturday: 08:00 - 13:00<br />
+        </p>
+      </address>
+    </section>
+
+    <section class="social  section">
+      <h2 class="section__title  section__title--footer">Stay Social</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <span class="social__pic">
+            <svg class="social__icon" width="15" height="14">
+              <use xlink:href="img/sprite.svg#social-linkedin" />
+            </svg>
+          </span>
+          <a class="link  social__link" href="#">Get linked up in LinkedIn</a>
+        </li>
+        <li class="social__item">
+          <span class="social__pic">
+            <svg class="social__icon" width="15" height="13">
+            <use xlink:href="img/sprite.svg#social-twitter" />
+          </svg>
+          </span>
+          <a class="link  link--footer  social__link" href="#">Keep up with our Tweets</a>
+        </li>
+        <li class="social__item">
+          <span class="social__pic">
+            <svg class="social__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#social-pinterest" />
+          </svg>
+          </span>
+          <a class="link  link--footer  social__link" href="#">Photos on Pinterest</a>
+        </li>
+        <li class="social__item">
+          <span class="social__pic">
+            <svg class="social__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#social-rss" />
+          </svg>
+          </span>
+          <a class="link  link--footer  social__link" href="#">RSS Feed</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="blog  section">
+      <h2 class="section__title  section__title--footer">From The Blog</h2>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <h3 class="blog__title">Blog Post Title</h3>
+          <p class="blog__author">Posted by Admin on 00.00.0000</p>
+          <p class="blog__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+          <p class="blog__footer">
+            <a class="link  link--footer  block__link" href="#">Read More »</a>
+          </p>
+        </li>
+        <li class="blog__item">
+          <h3 class="blog__title">Blog Post Title</h3>
+          <p class="blog__author">Posted by Admin on 00.00.0000</p>
+          <p class="blog__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+          <p class="blog__footer">
+            <a class="link  link--footer  block__link" href="#">Read More »</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact  section">
+      <h2 class="section__title  section__title--footer">Contact Us</h2>
+      <form class="form" action="#" method="POST">
+        <label class="field">
+          <span class="field__name  srOnly">Name</span>
+          <input class="field__input" type="text" name="name" placeholder="Name" />
+        </label>
+        <label class="field">
+          <span class="field__name  srOnly">Email</span>
+          <input class="field__input" type="email" name="email" placeholder="Email" />
+        </label>
+        <label class="field">
+          <span class="field__name  srOnly">Message</span>
+          <textarea class="field__input field__input--textarea" name="message" placeholder="Message"></textarea>
+        </label>
+        <button class="btn  form__submit" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="legal">
+      <p class="legal__text">Copyright © 2013 Domain Name - All Rights Reserved</p>
+      <p class="legal__text">Template by OS Templates</p>
+    </section>
+  </footer>
+</div>
+
+</body>
+</html>

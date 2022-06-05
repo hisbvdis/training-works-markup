@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("PT Sans"),
+    local("PTSans-Regular"),
+    url("../fonts/PTSans-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url("../fonts/PTSans-Bold.ttf") format("opentype");
+}

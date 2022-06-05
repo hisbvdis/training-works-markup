@@ -1,0 +1,155 @@
+@import "variables.scss";
+
+.price {
+  position: relative;
+
+  padding: 36px 0 55px;
+
+  // font-size: 20px;
+  // line-height: 27px;
+  color: $font-color--secondary;
+
+  background: $bg-color--secondary;
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  top: -34px;
+  left: 0;
+
+  width: 100%;
+  height: 34px;
+
+  background: url("../img/section-corner--tertiary-color.svg") 0 0 / 100% 100% no-repeat;
+}
+
+.price__section-header {
+  margin-bottom: 10px;
+}
+
+.price__table {
+  width: 100%;
+  margin-bottom: 20px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.price__table td {
+  padding: 8px 0;
+
+  vertical-align: top;
+}
+
+.price__num {
+  width: 72px;
+
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.price__name {
+  font-weight: 700;
+}
+
+.price__amount {
+  text-align: right;
+}
+
+.price__discount {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price__sale-img {
+  flex-shrink: 0;
+  display: block;
+  width: 58px;
+  height: 58px;
+  margin-right: 35px;
+}
+
+.price__sale-text {
+  flex-grow: 1;
+
+  text-align: center;
+}
+
+
+
+// Only mobile
+@media (min-width: 0) and (max-width: $mobile-width--max) {
+
+  .price__num,
+  .price__desc {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .price__section-header {
+    margin-bottom: 50px;
+  }
+
+  .price__subname {
+    display: none;
+  }
+
+  .price__table td {
+    padding: 14px 20px;
+    border: 1px solid #4a4a4a;
+  }
+
+  .price__amount {
+    text-align: left;
+  }
+
+  .price__sale-img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .price__sale-text {
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .price__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__table {
+    margin: 0 60px 0 0;
+  }
+
+  .price__discount {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price__sale-img {
+    width: 142px;
+    height: 142px;
+    margin: 0;
+  }
+
+  .price__sale-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

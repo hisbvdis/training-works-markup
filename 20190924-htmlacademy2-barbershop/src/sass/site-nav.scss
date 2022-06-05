@@ -1,0 +1,37 @@
+@import "variables.scss";
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: 0) and (max-width: $mobile-width--max) {
+  .site-nav__link {
+    background: $brand-color;
+    border-top: 1px solid #826550;
+    border-bottom: 1px solid #71543f;
+  }
+
+  .site-nav__link:hover {
+    background: darken($brand-color, 5%);
+    box-shadow: 0 1px 0 darken($brand-color, 5%), inset 0 1px 0 darken($brand-color, 5%);
+  }
+
+  .site-nav__link:active {
+    color: transparentize($color: $font-color--secondary, $amount: 0.7);
+
+    background-color: $brand-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    display: flex;
+  }
+
+  .site-nav__link--active {
+    background: linear-gradient(to right, $brand-color, $brand-color) 0 100% / 100% 3px no-repeat;
+  }
+}

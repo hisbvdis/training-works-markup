@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+.header {
+  background: $bg-color--tertiary;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 0 26px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .header {
+    background: $bg-color--service;
+  }
+
+  .header__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__container {
+    padding: 0 22px 0 30px;
+  }
+}

@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.container {
+  margin: 0 auto;
+}
+
+.inner-page__container {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 640px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 960px;
+  }
+}

@@ -1,0 +1,44 @@
+.form__field {
+  position: relative;
+
+  margin: 0;
+}
+
+.form__field,
+.form__input {
+  margin-top: 6px;
+}
+
+.form__field:last-child,
+.form__input:last-child {
+  margin-top: 0;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 9px 18px;
+
+  font: inherit;
+  line-height: 30px;
+
+  border: 1px solid #e5ddd5;
+}
+
+.form__input:hover {
+  border: 1px solid #d5c9bd;
+}
+
+.form__input:focus {
+  border: 1px solid #999999;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .form__input {
+    padding: 19px 18px;
+
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,25 @@
+.field {
+  display: block;
+  margin-block-end: 10px;
+}
+
+.field__input {
+  inline-size: 100%;
+  padding: 5px 10px;
+
+  font-size: 13rem;
+  line-height: 20.58rem;
+  color: #ffffff;
+
+  background: #383838;
+  border: none;
+  border-radius: 5px;
+}
+
+.field__input::placeholder {
+  color: #989898;
+}
+
+.field__input--textarea {
+  min-block-size: 100px;
+}

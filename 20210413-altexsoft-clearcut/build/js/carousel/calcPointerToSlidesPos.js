@@ -1,0 +1,1 @@
+"use strict";function calcPointerToSlidesPos(t,e){var n=t.pageX,t=e.getBoundingClientRect().left,e=e.getBoundingClientRect().width,e=Math.trunc((n-t)/e*100);return e<=40?"prev":40<e?"next":void 0}export{calcPointerToSlidesPos};

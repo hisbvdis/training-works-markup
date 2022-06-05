@@ -1,0 +1,16 @@
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  flex: 0 0 auto;
+  padding-inline: 15px;
+}
+
+.nav__item + .nav__item {
+  border-inline-start: 1px solid var(--grey-light);
+}

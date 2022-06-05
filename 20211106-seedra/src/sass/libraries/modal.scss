@@ -1,0 +1,98 @@
+/* ============================================ */
+/* ================ СЛУЖЕБНОЕ ================= */
+/* ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.placeholder-70 {
+  padding-block-end: 70%;
+  margin-block-end: 20px;
+
+  background: #ccc;
+}
+
+
+
+/* ============================================ */
+/* =================== BODY =================== */
+/* ============================================ */
+/* Постоянная полоса прокрутки у <body> */
+body {
+  overflow-y: scroll;
+}
+
+/* Полоса прокрутки показывается для пк с мышью. В этом случае скрывать 
+полосу прокрутки, но добавлять padding = 17px (ширина полосы) */
+@media (pointer: fine) {
+  .body--withModal {
+    padding-inline-end: 17px;
+    overflow: hidden;
+  }
+}
+
+
+
+/* ============================================ */
+/* ============= МОДАЛЬНОЕ ОКНО =============== */
+/* ============================================ */
+/* По умолчанию окно скрыто. Стили "Скрыть окно" (srOnly + visibility) */
+.modal {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  visibility: hidden;
+}
+
+/* Сброс стилей "Скрыть окно" (srOnly + visibility) к исходным значения */
+.modal--isOpen {
+  position: initial;
+
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding: initial;
+
+  white-space: initial;
+
+  border: initial;
+  overflow: initial;
+  clip: initial;
+  clip-path: initial;
+  visibility: visible;
+}
+
+/* Стилизация открытого модального окна */
+.modal--isOpen {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+
+  display: flex;
+  padding: 10px;
+
+  background: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
+}
+
+/* Стилизация блока с содержимым модального окна */
+.modal__content {
+  /* inline-size: 100%;
+  max-inline-size: 600px; */
+  padding: 20px;
+  margin: auto;
+
+  background: #fff;
+}

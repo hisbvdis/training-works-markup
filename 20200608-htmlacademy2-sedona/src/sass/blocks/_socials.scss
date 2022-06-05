@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 46px;
+  block-size: 48px;
+  margin-left: 5px;
+  
+  text-decoration: none;
+
+  background: var(--brandColor);
+}
+
+.social__titles {
+  font-size: 0;
+}
+
+.social__icon {
+  fill: #fff;
+}

@@ -1,0 +1,20 @@
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__title {
+  margin-block: 0;
+  
+  font-size: var(--fontSize-22);
+  line-height: 1.55;
+  letter-spacing: -1px;
+}
+
+
+@media (min-width: $tablet) {
+  .section__title {
+    font-size: var(--fontSize-36);
+  }
+}

@@ -1,0 +1,63 @@
+.field {
+  display: block;
+}
+
+.field__name {
+  margin: 0;
+}
+
+.field__input {
+  width: 100%;
+  padding: 16px 0;
+
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.field__input:hover,
+.field__input:focus {
+  border-bottom-color: $secondaryColor;
+}
+
+.field__input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.field__textarea {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: 15px;
+
+  border: 2px solid #000;
+}
+
+.field__textarea:hover,
+.field__textarea:focus {
+  border-color: $secondaryColor;
+}
+
+.field__textarea::placeholder,
+.field__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+
+@media (min-width: $tabletWidth) {
+  .field {
+    display: flex;
+    align-items: center;
+  }
+
+  .field__name {
+    margin-right: 30px;
+  }
+
+  .field__input {
+    padding-left: 15px;
+  }
+
+  .field__input--anotherBg {
+    background: #F1F1F1;
+  }
+}

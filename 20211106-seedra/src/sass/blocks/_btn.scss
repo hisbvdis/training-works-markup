@@ -1,0 +1,87 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-inline-size: 48px;
+  min-block-size: 48px;
+  padding-inline: 20px;
+
+  color: var(--brandColor);
+  text-decoration: none;
+  
+  border: 1px solid var(--grey-light);
+  border-radius: 8px;
+  background: var(--white);
+  fill: var(--brandColor);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Brans
+.btn--brand {
+  color: var(--white);
+
+  background-color: var(--brandColor);
+}
+
+.btn--brand:hover {
+  background-color: var(--brandColor-hover);
+}
+
+.btn--brand:active {
+  background-color: var(--brandColor-active);
+}
+
+
+// Fill
+.btn--fill {
+  border: 1px solid var(--grey-light);
+}
+
+.btn--fill:hover {
+  background-color: var(--green-light);
+}
+
+.btn--fill:active {
+  border: 1px solid var(--brandColor);
+}
+
+
+// Only icon
+.btn--onlyIcon {
+  padding: 0;
+  
+  border: 1px solid var(--grey-light);
+}
+
+.btn--onlyIcon:hover {
+  background-color: var(--green-light);
+}
+
+.btn--onlyIcon:active {
+  fill: var(--white);
+  
+  background-color: var(--brandColor);
+}
+
+
+// Border
+.btn--border {
+  border: 2px solid var(--grey-light);
+}
+
+.btn--border:hover {
+  border-color: var(--brandColor-opacity-8);
+}
+
+.btn--border:active {
+  border-color: var(--brandColor);
+}
+
+
+// Icon + text
+.btn--iconText {
+  display: inline-flex;
+  gap: 15px;
+  color: var(--fontColor-primary);
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин шаблонов студии «Nerds»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="page-header">
+    <nav class="page-nav container">
+        <div class="header-logo">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="Логотип дизайн-студии «Nerds»">
+            </a>
+        </div>
+        <ul class="site-nav">
+            <li><a href="catalog.html">Студия</a></li>
+            <li><a href="catalog.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="catalog.html">Контакты</a></li>
+        </ul>
+        <div class="header-cart"><a href="#">Корзина</a></div>
+    </nav>
+</header>
+
+<h1 class="page-title">Магазин готовых шаблонов</h1>
+
+<main class="main container">
+    <section class="filters">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters-form">
+            <fieldset class="range">
+                <legend>СТОИМОСТЬ:</legend>
+                <div class="slider"></div>
+                <p class="range-field">
+                    <label>от<input type="text" value="0"></label>
+                    <label>до<input type="text" value="15 000"></label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Сетка:</legend>
+                <ul>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="radio" name="grid" value="1" checked>
+                            <span class="custom-radio"></span>
+                            <span class="option-name">Адаптивная</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="radio" name="grid" value="2">
+                            <span class="custom-radio"></span>
+                            <span class="option-name">Фиксированная</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="radio" name="grid" value="3">
+                            <span class="custom-radio"></span>
+                            <span class="option-name">Резиновая</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>ОСОБЕННОСТИ:</legend>
+                <ul>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="checkbox" name="feature" value="1" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="option-name">Слайдер</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="checkbox" name="feature" value="2">
+                            <span class="custom-checkbox"></span>
+                            <span class="option-name">Блок преимуществ</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="checkbox" name="feature" value="3" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="option-name">Новости</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="checkbox" name="feature" value="4">
+                            <span class="custom-checkbox"></span>
+                            <span class="option-name">Галерея</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="option">
+                            <input class="standard-input visually-hidden" type="checkbox" name="feature" value="5">
+                            <span class="custom-checkbox"></span>
+                            <span class="option-name">Корзина</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="btn btn--gray" type="submit">Показать</button>
+        </form>
+    </section>
+
+    <section class="results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+
+        <div class="sort">
+            <p>СОРТИРОВАТЬ:</p>
+            <ul class="sort-type">
+                <li><a class="sort-type__current" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По названию</a></li>
+            </ul>
+            <ul class="sort-sequence">
+                <li>
+                    <a class="current down" href="#">
+                        <span class="visually-hidden">По убыванию</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="up" href="#">
+                        <span class="visually-hidden">По возрастанию</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="results-list">
+            <li class="results-item">
+                <img src="img/result-1.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+            <li class="results-item">
+                <img src="img/result-2.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+            <li class="results-item">
+                <img src="img/result-3.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+            <li class="results-item">
+                <img src="img/result-4.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+            <li class="results-item">
+                <img src="img/result-5.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+            <li class="results-item">
+                <img src="img/result-6.jpg" width="360" height="576" alt="Sedona">
+                <div class="item-details">
+                    <h3>Sedona</h3>
+                    <a class="desc" href="#">Информационный сайт для туристов</a>
+                    <a class="btn" href="#">9 900 руб.</a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="pagination">
+            <li><a class="current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Следующая</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <section class="contacts">
+        <h2 class="visually-hidden">Контакты студии</h2>
+        <img class="map" src="img/map.jpg" width="1440" height="416" alt="Адрес дизайн-студии «Nerds»: Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <div class="container">
+            <address class="address">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p class="street">
+                    191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8
+                </p>
+                <p class="tel">тел. +7 (812) 275-75-75</p>
+                <button class="btn" type="button">Напишите нам</button>
+            </address>
+        </div>
+    </section>
+
+    <div class="footer-bottom container">
+        <ul class="social">
+            <li><a class="social--vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social--fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a class="social--insta" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+        <div class="sale">
+            <p class="friends">Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

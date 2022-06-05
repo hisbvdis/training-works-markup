@@ -1,0 +1,36 @@
+.service__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 20px;
+  margin-block-end: 20px;
+}
+
+.service__img {
+  grid-row: span 2;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+}
+
+.service__title {
+  margin: 0 0 7px;
+
+  font-size: 14rem;
+  line-height: 16.8rem;
+  font-weight: 400;
+  color: #878787;
+}
+
+.service__desc {
+  margin: 0;
+
+  color: #868686;
+}

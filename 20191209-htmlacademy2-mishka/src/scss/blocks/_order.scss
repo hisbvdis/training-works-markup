@@ -1,0 +1,23 @@
+.order {
+  overflow: hidden;
+}
+
+.order__container {
+  max-width: 815px;
+}
+
+.order__intro {
+  margin: 0 0 25px;
+  
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tabletWidth) {
+  .order__intro {
+    // margin-bottom: 57px;
+    
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+// Base styles
+@import "base/_fonts.scss";
+@import "base/_variables.scss";
+@import "base/_common.scss";
+
+
+// BEM-blocks
+// -priority
+@import "blocks/_section.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_modal.scss";
+@import "blocks/_modalUnderlay.scss";
+// -normal
+@import "blocks/_hero.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_header.scss";
+@import "blocks/_navBtn.scss";
+@import "blocks/_topProduct.scss";
+@import "blocks/_about.scss";
+@import "blocks/_feedback.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_categories.scss";
+@import "blocks/_addCart.scss";
+@import "blocks/_subnav.scss";
+@import "blocks/_catalog.scss";
+@import "blocks/_video.scss";
+@import "blocks/_order.scss";
+@import "blocks/_form.scss";
+@import "blocks/_option.scss";
+@import "blocks/_field.scss";

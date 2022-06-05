@@ -1,0 +1,73 @@
+.navBtn {
+  position: relative;
+  
+  display: block;
+  width: 35px;
+  height: 24px;
+  
+  font-size: 0;
+
+  background: none;
+  border: none;
+}
+
+.nav--nojs .navBtn {
+  display: none;
+}
+
+.navBtn__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 35px;
+  height: 4px;
+  
+  background: $navTextColor;
+  transition: 0.2s;
+}
+
+.nav--opened .navBtn__line {
+  background: transparent;
+}
+
+.navBtn__line::before,
+.navBtn__line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 35px;
+  height: 4px;
+
+  background: $navTextColor;
+  transition: 0.2s;
+}
+
+.navBtn__line::before {
+  top: -10px;
+}
+
+.nav--opened .navBtn__line::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navBtn__line::after {
+  top: 10px;
+}
+
+.nav--opened .navBtn__line::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+@media (min-width: $desktop) {
+  .navBtn {
+    display: none;
+  }
+}

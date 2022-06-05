@@ -1,0 +1,12 @@
+// Screen size
+$desktopWidth: 1024px;
+$tabletWidth: 768px;
+$tabletWidth--max: $desktopWidth - 1;
+$mobileWidth--max: $tabletWidth - 1;
+
+// Brand Colors
+$primaryColor: #63d1bb;
+$secondaryColor: #56c3b2;
+
+$heroSection--main: #FAFAFA;
+$heroSection--inner: #F1F1F1;

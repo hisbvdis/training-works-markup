@@ -1,0 +1,124 @@
+.how__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.how__item {
+  display: flex;
+  
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.how__icon {
+  display: block;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.how__icon--leave {
+  background:
+    var(--brandColor)
+    url("../img/how__icon1.png") center no-repeat;
+}
+
+.how__icon--water {
+  background:
+    var(--brandColor)
+    url("../img/how__icon2.png") center no-repeat;
+}
+
+.how__icon--eat {
+  background:
+    var(--brandColor)
+    url("../img/how__icon3.png") center no-repeat;
+}
+
+.how__icon--clock {
+  background:
+    var(--brandColor)
+    url("../img/how__icon4.png") center no-repeat;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .how__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .how__item {
+    position: relative;
+
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+    min-height: 300px;
+    padding-right: 100px;
+  }
+
+  .how__item::before {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    z-index: -1;
+
+    font-family: "Oswald Variable";
+    font-size: 281px;
+    line-height: 230px;
+    color: #f2f2f2;
+  }
+
+  .how__item:nth-child(1)::before {
+    content: "1";
+  }
+
+  .how__item:nth-child(2)::before {
+    content: "2";
+  }
+
+  .how__item:nth-child(3)::before {
+    content: "3";
+  }
+
+  .how__item:nth-child(4)::before {
+    content: "4";
+  }
+
+  .how__icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .how__desc {
+    max-width: 250px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+// Desktop
+@media (min-width: $desktopWidth) {
+  .how__list {
+    padding: 0;
+  }
+
+  .how__item {
+    flex-basis: calc((100% - 300px) / 3);
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+
+  .how__item::before {
+    right: 50px;
+  }
+}

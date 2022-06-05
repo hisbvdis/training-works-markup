@@ -1,0 +1,4 @@
+// Images without "alt" attribute
+img:not([alt]) {
+  outline: 5px solid red;
+}

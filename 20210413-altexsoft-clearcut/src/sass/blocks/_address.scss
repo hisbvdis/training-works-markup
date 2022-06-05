@@ -1,0 +1,20 @@
+.address * {
+  font-style: normal;
+}
+
+.address__telfax {
+  color: #999999;
+  text-decoration: none;
+}
+
+.address__telfax:hover {
+  color: #808080;
+}
+
+.address__telfax:active {
+  color: #666666;
+}
+
+.address__hours {
+  font-weight: 600;
+}

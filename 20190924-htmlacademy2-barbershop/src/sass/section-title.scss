@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.section-title {
+  margin: 0;
+  
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width) {
+  .section-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

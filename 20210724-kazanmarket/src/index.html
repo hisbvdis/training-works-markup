@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="js/script.js" type="module"></script>
+  <title>Kazan Market</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__container  container  container--bg">
+    <div class="header__top">
+      <!-- LOGO TOP -->
+      <div class="logo  header__logo  header__logo--top">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="img/logo.webp" width="142" height="40" alt="Логотип 'Kazan Market'" />
+        </a>
+      </div><!-- Logo Top -->
+
+      <!-- INFO -->
+      <div class="info  header__info">
+        <ul class="info__list">
+          <li class="info__item">
+            <span class="icon  icon--bdBlack">
+              <svg class="icon__img  icon__img--brand" width="20" height="28">
+                <use xlink:href="./img/sprite.svg#pin" />
+              </svg>
+            </span>
+            <p class="info__data">
+              <span class="info__title">Самовывоз:</span>
+              <span class="info__text">Ждановичи, ул.<br /> Заречная, 1В, пом. 27</span>
+            </p>
+          </li>
+          <li class="info__item">
+            <span class="icon  icon--bdBlack">
+              <svg class="icon__img  icon__img--brand" width="30" height="18">
+                <use xlink:href="./img/sprite.svg#truck" />
+              </svg>
+            </span>
+            <p class="info__data">
+              <span class="info__title">Доставка:</span>
+              <span class="info__title">По Минску и всей Беларуси</span>
+              <span class="info__text">с 09:00 - 22:00, пн-вс</span>
+            </p>
+          </li>
+          <li class="info__item">
+            <span class="icon  icon--bdBlack">
+              <svg class="icon__img  icon__img--brand" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#247" />
+              </svg>
+            </span>
+            <p class="info__data">
+              <span class="info__title">Заказы<br /> принимаем<br /> 24\7</span>
+            </p>
+          </li>
+          <li class="info__item">
+            <span class="icon  icon--bdBlack">
+              <svg class="icon__img  icon__img--brand" width="25" height="25">
+                <use xlink:href="./img/sprite.svg#phone" />
+              </svg>
+            </span>
+            <p class="info__data">
+              <span class="info__title info__phone">+375 29 596 35 36</span>
+            </p>
+          </li>
+        </ul>
+      </div><!-- info -->
+    </div>
+
+    <div class="header__bottom">
+      <!-- Nav Button -->
+      <button class="sideBtn  header__sideBtn" data-modal="side" aria-haspopup="true">
+        <span class="sideBtn__line  sideBtn__line--1"></span>
+        <span class="sideBtn__line  sideBtn__line--2"></span>
+        <span class="sideBtn__line  sideBtn__line--3"></span>
+        <span class="srOnly">Открыть меню</span>
+      </button>
+
+      <!-- LOGO BOTTOM -->
+      <div class="logo  header__logo  header__logo--bottom">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="img/logo.webp" width="142" height="40" alt="Логотип 'Kazan Market'" />
+        </a>
+      </div>
+
+      <!-- NAV -->
+      <section class="nav  header__nav">
+        <h2 class="srOnly">Навигация</h2>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Почему мы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Почему наши казаны</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Казаны в подарок</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Как работаем</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Вопросы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#cauldron" />
+              </svg>
+              <span>Афганские казаны</span>
+            </a>
+          </li>
+        </ul>
+      </section><!-- nav -->
+
+      <!-- Cart -->
+      <div class="cart  cart--withTitle">
+        <a class="cart__link  header__cartLink">
+          <span class="cart__title  header__cartTitle">Корзина</span>
+          <span class="cart__count">1</span>
+          <svg class="cart__img  header__cartImg" width="30" height="30">
+            <use xlink:href="./img/sprite.svg#cart" />
+          </svg>
+        </a>
+      </div><!-- cart -->
+
+    </div> <!-- header__bottom -->
+  </div> <!-- header__container -->
+
+  <!-- Side navigation -->
+  <section class="side  modal" id="side" aria-modal="true" role="dialog">
+    <h2 class="srOnly">Боковая навигация</h2>
+    <ul class="side__list  modal__content">
+      <li class="side__item">
+        <a class="side__link" href="#">Почему мы</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Почему наши казаны</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Каталог</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Отзывы</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Казаны в подарок</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Как работаем</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">Вопросы</a>
+      </li>
+      <li class="side__item">
+        <a class="side__link" href="#">
+          <svg class="side__icon" width="20" height="20">
+            <use xlink:href="./img/sprite.svg#cauldron" />
+          </svg>
+          <span>Афганские казаны</span>
+        </a>
+      </li>
+    </ul>
+  </section><!-- side -->
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container  hero__container">
+
+    <div class="hero__service">
+      <span class="icon  icon--bdBlack  hero__icon">
+        <svg class="icon__img  icon__img--brand" width="17.5" height="17.5">
+          <use xlink:href="./img/sprite.svg#phone" />
+        </svg>
+      </span>
+      <p class="hero__phone">+375 29 596 35 36</p>
+      <p class="hero__247">Заказы принимаем 24\7</p>
+    </div>
+
+    <h1 class="hero__title">Узбекские чугунные казаны с <span class="hero__titleInner">пожизненной гарантией</span></h1>
+    <p class="hero__delivery">от 70 руб. <span class="hero__deliveryInner">С доставкой по всей Беларуси</span></p>
+    <p class="hero__refund"><span class="hero__refundInner">Вернем деньги!</span> Если не понравится приготовленная еда в нашем казане</p>
+
+    <picture>
+      <source srcset="img/cauldron-661.webp" media="(min-width: 430px)" />
+      <source srcset="img/cauldron-421.webp" />
+      <img class="hero__img" src="img/cauldron-421.webp" width="320" height="346" alt="Казан с пловом" />
+    </picture>
+
+    <div class="gift">
+      <p class="gift__title">
+        <span class="gift__titleText">Подберите казан и получите в подарок</span>
+        <svg class="gift__titleIcon" width="30" height="30">
+          <use xlink:href="./img/sprite.svg#gift" />
+        </svg>
+      </p>
+      <ul class="gift__list">
+        <li class="gift__item">
+          <svg class="gift__icon" width="80" height="80">
+            <use xlink:href="./img/sprite.svg#book" />
+          </svg>
+          <p class="gift__name">Книгу рецептов на 300+ блюд</p>
+        </li>
+        <li class="gift__item">
+          <svg class="gift__icon" width="80" height="80">
+            <use xlink:href="./img/sprite.svg#discount" />
+          </svg>
+          <p class="gift__name">Скидку 15% на любой казан</p>
+        </li>
+      </ul>
+      <div class="gift__footer">
+        <button class="btn  gift__btn">Подобрать казан и получить подарки</button>
+        <a class="gift__catalog" href="#">Каталог казанов с фото и ценами</a>
+      </div>
+    </div><!-- gift -->
+
+  </div><!-- hero__container -->
+</section><!-- hero -->
+
+<!-- Conditions -->
+<section class="conditions  section  section--bg">
+  <h2 class="srOnly">Условия работы</h2>
+  <div class="conditions__container  container">
+    <ul class="conditions__list">
+      <li class="conditions__item">
+        <div class="icon  conditions__icon">
+          <svg class="icon__img" width="35" height="35">
+            <use xlink:href="./img/sprite.svg#payment" />
+          </svg>
+        </div>
+        <span class="conditions__name">Оплата при получении</span>
+      </li>
+      <li class="conditions__item">
+        <span class="icon  conditions__icon">
+          <svg class="icon__img" width="35" height="35">
+            <use xlink:href="./img/sprite.svg#choice" />
+          </svg>
+        </span>
+        <span class="conditions__name">Можем доставить 2 на выбор</span>
+      </li>
+      <li class="conditions__item">
+        <span class="icon  conditions__icon">
+          <svg class="icon__img" width="35" height="35">
+            <use xlink:href="./img/sprite.svg#installment" />
+          </svg>
+        </span>
+        <span class="conditions__name">Рассрочка до 12 мес.</span>
+      </li>
+      <li class="conditions__item">
+        <span class="icon  conditions__icon">
+          <svg class="icon__img" width="35" height="35">
+            <use xlink:href="./img/sprite.svg#review" />
+          </svg>
+        </span>
+        <span class="conditions__name">400+ отзывов на сайте</span>
+      </li>
+    </ul>
+  </div>
+</section><!-- conditions -->
+
+<!-- service -->
+<section class="service  section  section--bg">
+  <div class="container  service__container">
+    <h2 class="srOnly">Наш сервис</h2>
+
+    <div class="manager  manager--big  service__manager">
+      <div class="manager__photo">
+        <picture>
+          <source srcset="img/manager-385.webp" media="(min-width: 1250px)" />
+          <source srcset="img/manager-82.webp" />
+          <img class="manager__img" src="img/manager-82.webp" width="82" height="80" alt="Менеджер Алексей" />
+        </picture>
+      </div>
+      <p class="manager__info">
+        <span class="manager__name">Алексей</span>
+        <span class="manager__shortPos">, управляющий</span>
+        <span class="manager__longPos">Управляющий магазином</span>
+      </p>
+    </div><!-- manager -->
+
+    <p class="sectionTitle  service__sectionTitle">У нас на сайте вы найдете <b>482+&nbsp;положительных отзывов</b></p>
+    <p class="service__subTitle">Потому что мы официальный дилер казанов и оказываем лучший сервис в Беларуси</p>
+
+    <div class="service__wrapper carousel">
+      <ul class="service__list  carousel__list" id="service__list">
+        <li class="service__item  carousel__item  carousel__item--visible">
+          <div class="service__heading">
+            <span class="icon  icon--bgBrand">
+              <svg class="icon__img" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#guarantee" />
+              </svg>
+            </span>
+            <span class="service__name">Пожизненная гарантия на казаны</span>
+          </div>
+          <p class="service__text">Продаем качественные Узбекские казаны из 100% чугуна, поэтому предоставляем пожизненную гарантию, документально</p>
+          <a class="link  service__link" href="#">Гарантийный талон</a>
+        </li>
+        <li class="service__item  carousel__item">
+          <div class="service__heading">
+            <div class="icon  icon--bgBrand">
+              <svg class="icon__img" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#factory" />
+              </svg>
+            </div>
+            <span class="service__name">Работаем напрямую с заводом в Намагане</span>
+          </div>
+          <p class="service__text">Завод Grand Metall Invest, г. Намаган, имеем сертификат официального дилера, у нас закупает казаны 21 век</p>
+          <a class="link  service__link" href="#">Смотреть сертификат</a>
+        </li>
+        <li class="service__item  carousel__item">
+          <div class="service__heading">
+            <span class="icon  icon--bgBrand">
+              <svg class="icon__img" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#cauldron" />
+              </svg>
+            </span>
+            <span class="service__name">Эксперты по казанам</span>
+          </div>
+          <p class="service__text">Продаем только казаны, хорошо разбираемся в товаре, грамотно консультируем и помогаем с выбором, даже если казан в подарок</p>
+        </li>
+        <li class="service__item  carousel__item">
+          <div class="service__heading">
+            <span class="icon  icon--bgBrand">
+              <svg class="icon__img" width="40" height="23">
+                <use xlink:href="./img/sprite.svg#truck" />
+              </svg>
+            </span>
+            <span class="service__name">Быстро доставляем по всей Беларуси</span>
+          </div>
+          <p class="service__text">4 часа по Минску, по Беларуси в день заказа, можете заказать 2 разных казана на выбор. Доставка прямо до дверей</p>
+        </li>
+        <li class="service__item  carousel__item">
+          <div class="service__heading">
+            <span class="icon  icon--bgBrand">
+              <svg class="icon__img" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#credit-card" />
+              </svg>
+            </span>
+            <span class="service__name">Оплата любым удобным способом</span>
+          </div>
+          <p class="service__text">Казан вы оплачиваете только после проверки, к оплате принимаем карты любого банка, наличные и карты рассрочки, всегда выдаем чек</p>
+        </li>
+        <li class="service__item  carousel__item">
+          <div class="service__heading">
+            <span class="icon  icon--bgBrand">
+              <svg class="icon__img" width="30" height="30">
+                <use xlink:href="./img/sprite.svg#percentage" />
+              </svg>
+            </span>
+            <span class="service__name">Рассрочка 0%, акции, скидки и подарки</span>
+          </div>
+          <p class="service__text">Рассрочка до 10 месяцев. Дарим подарки и делаем скидки за заказ, как новым, так и постоянным клиентам</p>
+        </li>
+      </ul><!-- service__list -->
+
+      <p class="carousel__buttons">
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#service__list" data-dir="prev">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-left" />
+          </svg>
+          <span class="srOnly">Назад</span>
+        </button>
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#service__list" data-dir="next">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-right" />
+          </svg>
+          <span class="srOnly">Вперёд</span>
+        </button>
+        <span class="carousel__buttonsTip">Используйте стрелки, чтобы просмотреть всё</span>
+      </p>
+    </div>
+  </div><!-- container -->
+</section><!-- service -->
+
+<!-- Cards -->
+<section class="cards  section  section--bg">
+  <div class="container  cards__container">
+    <h2 class="srOnly">Рассрочка</h2>
+    <p class="cards__title">
+      <svg class="cards__icon" width="30" height="30">
+        <use xlink:href="./img/sprite.svg#percentage" />
+      </svg>
+      Казан в рассрочкудо 12 месяцев без переплат по картам
+    </p>
+    <div class="cards__wrapper  carousel">
+      <ul class="cards__list  carousel__list" id="cards__list">
+        <li class="cards__item  carousel__item  carousel__item--visible">
+          <img class="cards__img" src="img/cards-1.webp" width="113" height="71" alt="Карта 'Халва'" />
+          <p class="cards__term">3,6 месяцев</p>
+          <h3 class="cards__name">Халва</h3>
+        </li>
+        <li class="cards__item  carousel__item">
+          <img class="cards__img" src="img/cards-2.webp" width="113" height="71" alt="Карта 'Карта'" />
+          <p class="cards__term">2 месяца</p>
+          <h3 class="cards__name">Карта покупок</h3>
+        </li>
+        <li class="cards__item  carousel__item">
+          <img class="cards__img" src="img/cards-3.webp" width="113" height="71" alt="Карта 'Магнит'" />
+          <p class="cards__term">4 месяца</p>
+          <h3 class="cards__name">Магнит</h3>
+        </li>
+        <li class="cards__item  carousel__item">
+          <img class="cards__img" src="img/cards-4.webp" width="113" height="71" alt="Карта 'КартаFun'" />
+          <p class="cards__term">3,4 месяца</p>
+          <h3 class="cards__name">КартаFun</h3>
+        </li>
+        <li class="cards__item  carousel__item">
+          <img class="cards__img" src="img/cards-5.webp" width="113" height="71" alt="Карта 'Смарт'" />
+          <p class="cards__term">4 месяца</p>
+          <h3 class="cards__name">Смарт карта</h3>
+        </li>
+        <li class="cards__item  carousel__item">
+          <img class="cards__img" src="img/cards-6.webp" width="113" height="71" alt="Карта 'Черепаха'" />
+          <p class="cards__term">4, 8, 12 месяцев</p>
+          <h3 class="cards__name">Черепаха</h3>
+        </li>
+      </ul>
+
+      <p class="carousel__buttons">
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#cards__list" data-dir="prev">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-left" />
+          </svg>
+          <span class="srOnly">Назад</span>
+        </button>
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#cards__list" data-dir="next">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-right" />
+          </svg>
+          <span class="srOnly">Вперёд</span>
+        </button>
+        <span class="carousel__buttonsTip">Используйте стрелки, чтобы просмотреть всё</span>
+      </p>
+    </div>
+
+    <a class="btn  cards__link" href="#">Купить в рассрочку</a>
+  </div>
+</section><!-- cards -->
+
+<!-- Quality -->
+<section class="quality  section">
+  <div class="container">
+    <h2 class="srOnly">Качество казанов</h2>
+    <p class="sectionTitle  quality__sectionTitle">Оригинальные чугунные <b>Узбекские&nbsp;казаны <br /> Grand&nbsp;Metall&nbsp;Invest</b> с пожизненной гарантией</p>
+    <p class="quality__subTitle">Качество стоит каждой копейки</p>
+
+    <div class="manager  quality__manager">
+      <div class="manager__photo">
+        <img class="icon__img  icon__img--brand  manager__img" src="img/manager-82.webp" width="82" height="80" alt="Менеджер Алексей" />
+      </div>
+      <p class="manager__info">
+        <span class="manager__name">Алексей</span><span class="manager__shortPos">,<br />управляющий</span>
+        <span class="manager__phrase">Да, мы продаем лучшие</span>
+      </p>
+    </div><!-- manager -->
+
+    <div class="quality__main">
+      <img class="quality__poster" src="img/quality-poster.webp" width="681" height="473" alt="Казан с крышкой" />
+
+      <div class="quality__cast">
+        <div class="icon  quality__castIcon">
+          <p class="icon__inner  icon__inner--bdBrand  icon__inner--bgWhite">
+            <span class="icon__text  icon__text--black  quality__iconText"><b>100%</b> чугун</span>
+          </p>
+        </div>
+        <p class="quality__castText">Полностью отлит вручную из чугунна без сварки, примесей и прочих химикатов</p>
+      </div>
+
+      <div class="quality__wrapper  carousel">
+        <ul class="quality__list  carousel__list" id="quality__list">
+          <li class="quality__item  carousel__item  carousel__item--visible">
+            <div class="quality__itemInner">
+              <div class="icon  quality__icon">
+                <p class="icon__inner">
+                  <img src="img/quality-1.webp" width="90" height="90" alt="Крышка казана" />
+                </p>
+              </div>
+              <p class="quality__info">
+                <span class="quality__name">Алюминиевая крышка в комплекте</span>
+                <a class="link" href="#">Что это дает</a>
+              </p>
+            </div>
+          </li>
+          <li class="quality__item  carousel__item">
+            <div class="quality__itemInner">
+              <div class="icon  quality__icon">
+                <p class="icon__inner">
+                  <img src="img/quality-2.webp" width="90" height="90" alt="Казан без крышки: вид сверху" />
+                </p>
+              </div>
+              <p class="quality__info">
+                <span class="quality__name">Толстые чугунные стенки от 6 до 15 мм.</span>
+                <a class="link" href="#">Что это дает</a>
+              </p>
+            </div>
+          </li>
+          <li class="quality__item  carousel__item">
+            <div class="quality__itemInner">
+              <div class="icon  quality__icon">
+                <p class="icon__inner">
+                  <img src="img/quality-3.webp" width="90" height="90" alt="Казан с крышкой" />
+                </p>
+              </div>
+              <p class="quality__info">
+                <span class="quality__name">Правильная форма чаши для готовки</span>
+                <a class="link" href="#">Что это дает</a>
+              </p>
+            </div>
+          </li>
+          <li class="quality__item  carousel__item">
+            <div class="quality__itemInner">
+              <div class="icon  quality__icon">
+                <p class="icon__inner">
+                  <img src="img/quality-4.webp" width="90" height="90" alt="Казан: вид сверху" />
+                </p>
+              </div>
+              <p class="quality__info">
+                <span class="quality__name">Ручная шлифовка внутри</span>
+                <a class="link" href="#">Что это дает</a>
+              </p>
+            </div>
+          </li>
+          <li class="quality__item  carousel__item">
+            <div class="quality__itemInner">
+              <div class="icon  quality__icon">
+                <p class="icon__inner">
+                  <img src="img/quality-5.webp" width="90" height="90" alt="Казан: вид сверху" />
+                </p>
+              </div>
+              <p class="quality__info">
+                <span class="quality__name">Можно готовить на огне, плитах, круглое и плоское дно</span>
+                <a class="link" href="#">Что это дает</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <p class="carousel__buttons">
+          <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#quality__list" data-dir="prev">
+            <svg width="30" height="18">
+              <use xlink:href="img/sprite.svg#arrow-left" />
+            </svg>
+            <span class="srOnly">Назад</span>
+          </button>
+          <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#quality__list" data-dir="next">
+            <svg width="30" height="18">
+              <use xlink:href="img/sprite.svg#arrow-right" />
+            </svg>
+            <span class="srOnly">Вперёд</span>
+          </button>
+          <span class="carousel__buttonsTip">Используйте стрелки, чтобы просмотреть всё</span>
+        </p>
+      </div>
+
+      <footer class="quality__footer">
+        <a class="btn  quality__footerBtn" href="#">Перейти в каталог</a>
+        <a class="link  quality__footerLink" href="#">Сравнить с другими казанами</a>
+      </footer>
+    </div><!-- quality__main -->
+
+    <section class="fake  section  section--bg">
+      <header class="fake__header">
+        <p class="fake__title"><span class="fake__titleStrong">Осторожно!</span> Низкокачественные подделки на казаны Grand Metall Invest</p>
+        <p class="fake__desc">Нам начали поступать жалобы от клиентов других магазинов, о низкокачественных подделках, которые ржавеют и раскалываются. При этом подделки продают по цене оригинальных казанов Grand Metall Invest</p>
+        <a class="link  fake__link" href="#">Подробнее о подделках</a>
+        <img class="fake__image1" src="img/fake-image1.webp" width="288" height="147" alt="Казан с приоткрытой крышкой" />
+      </header>
+      <footer class="fake__footer">
+        <p class="fake__title2">Отличить подделку просто</p>
+        <p class="fake__small"><strong class="fake__smallStrong">У настоящих Узбекских казанов</strong> на стенке расположено оригинальное клеймо, в то время как на стенке у подделок оно отсутствуе</p>
+        <p class="fake__footerImg">
+          <img class="fake__stigma" src="img/fake-stigma1.webp" width="63" height="63" alt="Клеймо на оригинальном казане 1" />
+          <img class="fake__stigma" src="img/fake-stigma2.webp" width="63" height="63" alt="Клеймо на оригинальном казане 2" />
+          <img class="fake__image2" src="img/fake-image2.webp" width="312" height="195" alt="Казан с крышкой" />
+        </p>
+      </footer>
+    </section>
+  </div><!-- container -->
+</section><!-- quality -->
+
+<section class="discount">
+  <div class="container">
+    <p class="catalog__discount  sectionTitle">Сезонная скидка -15% На весь ассортимент до апреля</p>
+  </div>
+</section>
+
+<section class="catalog  section  section--bg">
+  <div class="container">
+    <h2 class="sectionTitle  sectionTitle--bold  catalog__sectionTitle">Каталог казанов Grand Metall Invest</h2>
+    <p class="catalog__titleLinks">
+      <a class="link  catalog__titleLink" href="#">Как выбрать казан по размеру</a>
+      <a class="link  catalog__titleLink" href="#">Как заказать на сайте</a>
+    </p>
+
+    <div class="catalog__family">
+      <div class="icon  catalog__icon">
+        <p class="icon__inner  icon__inner--bgBrand">
+          <svg class="icon__img" width="30" height="30">
+            <use xlink:href="img/sprite.svg#family" />
+          </svg>
+        </p>
+      </div><!-- icon -->
+      <p class="catalog__familyText">Для небольшой компании или семьи до 6 персон</p>
+    </div><!-- catalog__family -->
+
+    <div class="carousel">
+      <ul class="catalog__list  carousel__list" id="carousel1">
+        <li class="card  catalog__item  carousel__item  carousel__item--visible">
+          <p class="card__img"></p>
+          <h2 class="card__itemTitle">Казан 3,5 л #1</h2>
+          <div class="card__persons">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#person"></use>
+            </svg>
+            <small>Для готовки на 1-2 персоны</small>
+          </div>
+          <ul class="card__featureList">
+            <li class="card__feature">
+              <span>Дно</span>
+              <span>Плоское</span>
+            </li>
+            <li class="card__feature">
+              <span>Диаметр</span>
+              <span>28 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Глубина</span>
+              <span>10 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Толщина стенок</span>
+              <span>6 мм.</span>
+            </li>
+            <li class="card__feature">
+              <span>Вес</span>
+              <span>3.6 кг.</span>
+            </li>
+            <li class="card__feature">
+              <span>Крышка</span>
+              <span>Алюминивая</span>
+            </li>
+          </ul>
+          <div class="card__price">
+            <span class="card__prevPrice">80 руб.</span>
+            <p class="card__currentPrice">
+              <span class="card__amount">70 <small class="card__currency">руб.</small></span>
+              <span class="card__priceDesc">Цена с сезонной<br />скидкой</span>
+            </p>
+          </div>
+          <footer class="card__footer">
+            <button class="btn  card__btn">Купить</button>
+            <div class="cart">
+              <a class="cart__link">
+                <span class="srOnly">Корзина</span>
+                <span class="cart__count">+</span>
+                <svg class="cart__img" width="30" height="30">
+                  <use xlink:href="./img/sprite.svg#cart" />
+                </svg>
+              </a>
+            </div>
+          </footer>
+        </li>
+        <li class="card  catalog__item  carousel__item">
+          <p class="card__img"></p>
+          <h2 class="card__itemTitle">Казан 3,5 л #2</h2>
+          <div class="card__persons">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#person"></use>
+            </svg>
+            <small>Для готовки на 1-2 персоны</small>
+          </div>
+          <ul class="card__featureList">
+            <li class="card__feature">
+              <span>Дно</span>
+              <span>Плоское</span>
+            </li>
+            <li class="card__feature">
+              <span>Диаметр</span>
+              <span>28 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Глубина</span>
+              <span>10 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Толщина стенок</span>
+              <span>6 мм.</span>
+            </li>
+            <li class="card__feature">
+              <span>Вес</span>
+              <span>3.6 кг.</span>
+            </li>
+            <li class="card__feature">
+              <span>Крышка</span>
+              <span>Алюминивая</span>
+            </li>
+          </ul>
+          <div class="card__price">
+            <span class="card__prevPrice">80 руб.</span>
+            <p class="card__currentPrice">
+              <span class="card__amount">70 <small class="card__currency">руб.</small></span>
+              <span class="card__priceDesc">Цена с сезонной<br />скидкой</span>
+            </p>
+          </div>
+          <footer class="card__footer">
+            <button class="btn  card__btn">Купить</button>
+            <div class="cart">
+              <a class="cart__link">
+                <span class="srOnly">Корзина</span>
+                <span class="cart__count">+</span>
+                <svg class="cart__img" width="30" height="30">
+                  <use xlink:href="./img/sprite.svg#cart" />
+                </svg>
+              </a>
+            </div>
+          </footer>
+        </li>
+        <li class="card  catalog__item  carousel__item">
+          <p class="card__img"></p>
+          <h2 class="card__itemTitle">Казан 3,5 л #3</h2>
+          <div class="card__persons">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#person"></use>
+            </svg>
+            <small>Для готовки на 1-2 персоны</small>
+          </div>
+          <ul class="card__featureList">
+            <li class="card__feature">
+              <span>Дно</span>
+              <span>Плоское</span>
+            </li>
+            <li class="card__feature">
+              <span>Диаметр</span>
+              <span>28 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Глубина</span>
+              <span>10 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Толщина стенок</span>
+              <span>6 мм.</span>
+            </li>
+            <li class="card__feature">
+              <span>Вес</span>
+              <span>3.6 кг.</span>
+            </li>
+            <li class="card__feature">
+              <span>Крышка</span>
+              <span>Алюминивая</span>
+            </li>
+          </ul>
+          <div class="card__price">
+            <span class="card__prevPrice">80 руб.</span>
+            <p class="card__currentPrice">
+              <span class="card__amount">70 <small class="card__currency">руб.</small></span>
+              <span class="card__priceDesc">Цена с сезонной<br />скидкой</span>
+            </p>
+          </div>
+          <footer class="card__footer">
+            <button class="btn  card__btn">Купить</button>
+            <div class="cart">
+              <a class="cart__link">
+                <span class="srOnly">Корзина</span>
+                <span class="cart__count">+</span>
+                <svg class="cart__img" width="30" height="30">
+                  <use xlink:href="./img/sprite.svg#cart" />
+                </svg>
+              </a>
+            </div>
+          </footer>
+        </li>
+        <li class="card  catalog__item  carousel__item">
+          <p class="card__img"></p>
+          <h2 class="card__itemTitle">Казан 3,5 л #4</h2>
+          <div class="card__persons">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#person"></use>
+            </svg>
+            <small>Для готовки на 1-2 персоны</small>
+          </div>
+          <ul class="card__featureList">
+            <li class="card__feature">
+              <span>Дно</span>
+              <span>Плоское</span>
+            </li>
+            <li class="card__feature">
+              <span>Диаметр</span>
+              <span>28 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Глубина</span>
+              <span>10 см.</span>
+            </li>
+            <li class="card__feature">
+              <span>Толщина стенок</span>
+              <span>6 мм.</span>
+            </li>
+            <li class="card__feature">
+              <span>Вес</span>
+              <span>3.6 кг.</span>
+            </li>
+            <li class="card__feature">
+              <span>Крышка</span>
+              <span>Алюминивая</span>
+            </li>
+          </ul>
+          <div class="card__price">
+            <span class="card__prevPrice">80 руб.</span>
+            <p class="card__currentPrice">
+              <span class="card__amount">70 <small class="card__currency">руб.</small></span>
+              <span class="card__priceDesc">Цена с сезонной<br />скидкой</span>
+            </p>
+          </div>
+          <footer class="card__footer">
+            <button class="btn  card__btn">Купить</button>
+            <div class="cart">
+              <a class="cart__link">
+                <span class="srOnly">Корзина</span>
+                <span class="cart__count">+</span>
+                <svg class="cart__img" width="30" height="30">
+                  <use xlink:href="./img/sprite.svg#cart" />
+                </svg>
+              </a>
+            </div>
+          </footer>
+        </li>
+      </ul>
+      <p class="carousel__buttons">
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#service__list" data-dir="prev">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-left" />
+          </svg>
+          <span class="srOnly">Назад</span>
+        </button>
+        <button class="carousel__btn" type="button" data-trigger="carousel" data-target="#service__list" data-dir="next">
+          <svg width="30" height="18">
+            <use xlink:href="img/sprite.svg#arrow-right" />
+          </svg>
+          <span class="srOnly">Вперёд</span>
+        </button>
+        <span class="carousel__buttonsTip">Используйте стрелки, чтобы просмотреть всё</span>
+      </p>
+    </div><!-- carousel -->
+  </div><!-- container -->
+</section><!-- catalog -->
+
+<section class="faq  section">
+  <div class="container">
+    <h2 class="sectionTitle  sectionTitle--bold  faq__sectionTitle">Частые вопросы</h2>
+    <ul class="faq__list">
+      <li class="faq__item  faq__item--big">
+        <summary class="faq__title  faq__title--main">Как подготовить казан к первому использованию?</summary>
+        <ol class="list">
+          <li class="list__item">Во время производства на стенках казана остается производственное масло</li>
+          <li class="list__item">Чтобы очистить и правильно подготовить казан к использованию его необходимо раскалить на слабом огне в течении получаса. Наполните казан одним литром растительного масла и продолжайте его прокаливать. Наклоняйте в разные стороны казан, чтобы всего его стенки покрылись горячим маслом. Проделайте эту процедуру в течении получаса еще раз.</li>
+          <li class="list__item">Уберите казан с огня, дайте маслу и поверхности остыть. Вылейте остатки масла и протрите казан насухо марлей или бумажным полотенцем.Жировая прослойка, которая образовалась в результате подготовки - правильное состояние покрытия казана.</li>
+          <li class="list__item">При редкой эксплуатации казана желательно повторите эти действия, чтобы восстановить рабочую поверхность</li>
+        </ol>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Какой объем казана мне необходим?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Умножьте количество гостей на два.<br />
+            К этому результату добавьте два литра.<br />
+            В таком случае содержимое казана можно спокойно перемешивать.<br />
+            Даже небольшие порции еды лучше приготовить в казанах большего объема блюда получаются более вкусные и сытные.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Какие стандарты качества вашей продукции?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">Качество наших казанов подтверждено декларацией соответствия. Мы работаем напрямую с производителем из г. Наманган (Узбекистан), что дает нам возможность отслеживать качество наших товаров.</p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>С каким дном бывают казаны у вас?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Варианты исполнения дна казана: круглый или плоский.<br />
+            Казаны с плоским и круглым дном внутри одинаковые.<br />
+            Модели с плоским дном устойчивые, что дает удобство в процессе приготовления.<br />
+            Казаны с плоским дном пользуются большим спросом, чем модели с круглым дном.<br />
+            Размер площадки казана с плоским дном 10-14 см.<br />
+            Внутри казан идёт круглый, как и в стандартном казане.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Подходят ли ваши казаны для дома?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Казан можно использовать дома и на природе.<br />
+            Модели для использования дома идут с плоским дном.<br />
+            Подходят в том числе и для индукционных плит.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Какая крышка у казана?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Казан можно использовать дома и на природе.<br />
+            Модели для использования дома идут с плоским дном.<br />
+            Подходят в том числе и для индукционных плит.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Какая внутренняя поверхность казана?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Казан идет в комплекте с алюминиевой крышкой. Алюминиевая крышка: легкая, плотно садится в паз казана.<br />
+            В отличие от чугунной крышки, алюминиевая не окисляется, не забирает тепло и не увеличивает конечную стоимость казана.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Какое отличие ваших казанов от других?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            Внутренняя поверхность казана идеально гладкая. Казаны шлифуют на заводе.<br />
+            Чугунные казаны покрыты индустриальным маслом для сохранения его технических характеристик до начала использования.<br />
+          </p>
+        </details>
+      </li>
+      <li class="faq__item">
+        <details>
+          <summary class="faq__title" data-role="spoilerTrigger">
+            <span>Как правильно ухаживать за казаном?</span>
+            <button class="faq__btn">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#angle-bottom" />
+              </svg>
+            </button>
+          </summary>
+          <p class="faq__answer" data-js="answer">
+            После приготовления вкусных блюд казан необходимо помыть.<br />
+            Ни в коем случае нельзя его мыть моющими средствами. Необходимо будет обойтись простой водой и мягкой щеткой, чтобы не повредить поверхность казана. Вымытый казан необходимо вытереть бумажным полотенцем и просушить на открытом воздухе, для предотвращения дальнейшего образования ржавчины на поверхности.<br />
+            После того, как казан будет сухим необходимо при помощи полотенца натереть растительным маслом до состояния блеска.<br />
+            Важно не переборщить с количеством масла, таким образом вы создадите естественную жировую пленку, которая заметно сделает в будущем приготовление на казане более простым из-за естественного покрытия.<br />
+          </p>
+        </details>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="map">
+  <div class="map__leaflet" id="map__leaflet" width="100%" height="300px"></div>
+  <div class="container  map__container">
+    <h2 class="srOnly">Контакты</h2>
+    <p class="map__title">Свяжитесь с нами любым удобным способом</p>
+    <ul class="map__list">
+      <li class="map__item">
+        <div class="icon  icon--bdBlack">
+          <svg class="icon__img" width="30" height="30">
+            <use xlink:href="./img/sprite.svg#phone" />
+          </svg>
+        </div>
+        <p class="map__itemText">+375 29 596 35 36</p>
+      </li>
+      <li class="map__item">
+        <div class="icon  icon--bdBlack">
+          <svg class="icon__img" width="30" height="30">
+            <use xlink:href="./img/sprite.svg#pin" />
+          </svg>
+        </div>
+        <p class="map__itemText">Ждановичи, ул.<br />Заречная, 1В, пом. 27</p>
+      </li>
+      <li class="map__item">
+        <div class="icon  icon--bdBlack">
+          <svg class="icon__img" width="30" height="30">
+            <use xlink:href="./img/sprite.svg#247" />
+          </svg>
+        </div>
+        <p class="map__itemText">
+          Заказы<br />
+          принимаем<br />
+          24\7
+        </p>
+      </li>
+    </ul>
+    <ul class="map__social">
+      <li class="map__socialItem">
+        <a class="map__socialLink" href="#">
+          <div class="icon  icon--bdBlack  map__socialIcon">
+            <svg class="icon__img" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#facebook" />
+            </svg>
+          </div>
+          <p class="map__socialText">Facebook</p>
+        </a>
+      </li>
+      <li class="map__socialItem">
+        <a class="map__socialLink  map__socialLink--email" href="#">
+          <div class="icon  icon--bdBlack  map__socialIcon">
+            <svg class="icon__img" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#email" />
+            </svg>
+          </div>
+          <p class="map__socialText">kazan.market.minsk@gmail.com</p>
+        </a>
+      </li>
+      <li class="map__socialItem">
+        <a class="map__socialLink" href="#">
+          <div class="icon  icon--bdBlack  map__socialIcon">
+            <svg class="icon__img" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#instagram" />
+            </svg>
+          </div>
+          <p class="map__socialText">Instagram</p>
+        </a>
+      </li>
+      <li class="map__socialItem">
+        <a class="map__socialLink" href="#">
+          <div class="icon  icon--bdBlack  map__socialIcon">
+            <svg class="icon__img" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#telegram" />
+            </svg>
+          </div>
+          <p class="map__socialText">Telegram</p>
+        </a>
+      </li>
+    </ul>
+    <p class="map__title">Фото шоу-рума</p>
+    <ul class="map__photo">
+      <li class="map__photoItem">
+        <img class="map__photoImg" src="./img/photo1.webp" width="117" height="127" alt="Стелажи с казанами - вид спереди" />
+      </li>
+      <li class="map__photoItem">
+        <img class="map__photoImg" src="./img/photo2.webp" width="117" height="127" alt="Стелажи с казанами - вид сбоку" />
+      </li>
+      <li class="map__photoItem">
+        <img class="map__photoImg" src="./img/photo3.webp" width="117" height="127" alt="Стелажи с казанами - вблизи" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer section  section--bg">
+  <div class="container  footer__container">
+    <div class="logo  footer__logo">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="img/logo.webp" width="142" height="40" alt="Логотип 'Kazan Market'" />
+      </a>
+    </div><!-- Logo Top -->
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Опт</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Реквизиты</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Политика конфеденциальности</a>
+      </li>
+    </ul>
+    <p class="footer__dev">
+      <a class="footer__devLink" href="#">Сайт разработал</a>
+    </p>
+    <small class="footer__copyright">© Копирование материалов карается<br />плохим пловом</small>
+  </div>
+</footer>
+
+</body>
+</html>

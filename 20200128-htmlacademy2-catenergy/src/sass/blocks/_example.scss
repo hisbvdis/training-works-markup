@@ -1,0 +1,173 @@
+.example {
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+}
+
+.example__container {
+  padding-top: 35px;
+}
+
+.example__desc {
+  margin: 0 0 25px;
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__item {
+  position: relative;
+
+  flex-basis: calc((100% - 30px) / 2);
+  margin: 0;
+}
+
+.example__item--sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  margin: 30px 0 0;
+  
+  font-family: "Oswald Variable";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__value {
+  margin: 0;
+  padding: 13px 15px 17px;
+
+  font-family: "Oswald Variable";
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.example__name {
+  position: absolute;
+  top: calc(100% - 10px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  padding: 0 15px;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background: #F2F2F2;
+}
+
+.example__subText {
+  margin: 0;
+  
+  font-family: "Oswald Variable";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__beforeImg {
+  margin: 0 auto;
+}
+
+.example__toggler {
+  font-family: "Oswald Variable";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__figure {
+  margin: 0;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .example {
+    background: linear-gradient(to bottom, #fff 50%, #F2F2F2 50%);
+  }
+
+  .example__list {
+    justify-content: flex-start;
+  }
+
+  .example__item {
+    flex-basis: 25%;
+  }
+
+  .example__item:first-child {
+    margin-right: 40px;
+  }
+
+  .example__item--sub {
+    flex-basis: auto;
+    margin: 0 0 0 auto;
+  }
+
+  .example__name {
+    background: #fff;
+  }
+
+  .example__beforeImg {
+    width: 677px;
+    height: 499px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .example {
+    background: linear-gradient(to bottom, #fff 25%, #F2F2F2 25%);
+  }
+
+  .example__container {
+    display: flex;
+  }
+
+  .example__info {
+    flex-basis: 430px;
+  }
+
+  .example__desc {
+    margin: 80px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__item {
+    min-width: 150px;
+  }
+
+  .example__name {
+    background: #F2F2F2;
+  }
+
+  .example__item--sub {
+    flex-basis: 100%;
+    justify-content: flex-start;
+    margin: 50px 0 0 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__figure {
+    flex-basis: 50%;
+  }
+
+  .example__beforeImg {
+    object-fit: cover;
+  }
+}

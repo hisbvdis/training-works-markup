@@ -1,0 +1,147 @@
+@import "variables.scss";
+
+.news {
+  padding: 35px 20px 28px;
+
+  background: $bg-color--primary;
+  border-bottom: 1px solid #e5ddd5;
+}
+
+.news__list {
+  margin: 0 0 6px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.news__item {
+  display: flex;
+  padding: 15px 0 18px;
+}
+
+.news__date-link {
+  flex-basis: 50px;
+  flex-shrink: 0;
+  padding: 11px 0 0;
+}
+
+.news__date {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 3px 0 0 0;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: $font-color--secondary;
+  text-align: center;
+
+  background: $bg-color--service;
+}
+
+.news__item:hover .news__date {
+  background: $brand-color;
+}
+
+.news__item:active .news__date {
+  background: $brand-color-darker;
+}
+
+.news__date::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  border-top: 10px solid #000;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+.news__item:hover .news__date::after {
+  border-top-color: $brand-color;
+}
+
+.news__item:active .news__date::after {
+  border-top-color: $brand-color-darker;
+}
+
+.news__day {
+  display: block;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.news__item:active .news__day,
+.news__item:active .news__month {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.news__desc {
+  margin: 0;
+  padding-left: 19px;
+
+  color: #000;
+
+  cursor: pointer;
+}
+
+.news__item:hover .news__desc {
+  color: $brand-color;
+  text-decoration: underline;
+}
+
+.news__item:active .news__desc {
+  color: $brand-color-darker;
+  text-decoration: underline;
+}
+
+
+// Only mobile
+@media (min-width: 0) and (max-width: $mobile-width--max) {
+  .news__item + .news__item {
+    border-top: 1px solid #e5ddd5;
+  }
+
+  .news__all-link {
+    display: block;
+  }
+}
+
+
+// Mobile + Tablet
+@media (min-width: 0) and (max-width: $tablet-width--max) {
+  .news__item:nth-child(n+3) {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .news__all-link {
+    display: none;
+  }
+
+  .news__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news__item {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news {
+    padding: 50px 20px 28px;
+  }
+
+  .news__item {
+    flex-basis: calc(100% / 3 - 35px);
+  }
+}

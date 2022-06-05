@@ -1,0 +1,37 @@
+.effect__container {
+  display: none;
+}
+
+
+@media (min-width: $tablet) {
+  .effect__container {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .effect__img {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  .effect__imgPic {
+    margin: 0 auto;
+  }
+
+  .effect__heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .effect__link {
+    color: $hoverColor;
+    text-decoration: underline;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  
+}

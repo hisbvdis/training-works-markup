@@ -1,0 +1,110 @@
+.hero {
+  margin-bottom: 20px;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 0;
+
+  padding-top: 50px;
+
+  color: #fff;
+
+  background:
+    url("../../img/hero__bg--mobile.jpg") top / auto 305px no-repeat,
+    linear-gradient(to bottom, #65A93C 305px, transparent 305px);
+}
+
+.hero__title {
+  text-align: center;
+}
+
+.hero__subtitle {
+  margin-bottom: 35px;
+
+  font-family: "Oswald Variable";
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__canImg {
+  margin: 0 auto;
+}
+
+
+// Only mobile
+@media (min-width: 0) and (max-width: $mobileWidth--max) {
+  
+}
+
+
+// Tablet
+@media (min-width: $tabletWidth) {
+  .hero__container {
+    min-height: 900px;
+    
+    color: #111;
+    
+    background: #fff;
+  }
+
+  .hero__title {
+    margin-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .hero__subtitle {
+    margin-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .hero__canImg {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    
+    width: 709px;
+    height: 609px;
+  }
+
+  .hero__btn {
+    margin-left: 90px;
+  }
+}
+
+
+// Desktop
+@media (min-width: $desktopWidth) {
+  .hero {
+    margin-bottom: 40px;
+  }
+  
+  .hero__container {
+    position: relative;
+
+    min-height: 550px;
+    
+    background: url("../../img/hero__bg--desktop.jpg") calc(100% - 40px) 0 / auto 100% no-repeat;
+  }
+
+  .hero__canImg {
+    top: 50px;
+    bottom: auto;
+    left: auto;
+    right: 200px;
+    transform: none;
+    
+    width: 552px;
+    height: 499px;
+  }
+}

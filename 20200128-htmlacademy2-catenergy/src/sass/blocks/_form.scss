@@ -1,0 +1,151 @@
+.form {
+  font-family: "Oswald Variable";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  padding: 20px;
+
+  overflow-x: hidden;
+}
+
+.form__fieldset--target {  
+  border-top: 1px solid var(--secondaryColor--middle);
+  border-bottom: 1px solid var(--secondaryColor--middle);
+}
+
+.form__legend {
+  position: relative;
+  z-index: 0;
+  
+  margin: 0 0 30px;
+
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: none;
+}
+
+.form__legend::before {
+  content: "";
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  z-index: -1;
+
+  width: 100vw;
+  height: 3px;
+
+  background: var(--brandColor);
+}
+
+.form__legendText {
+  padding-right: 15px;
+  
+  background: #fff;
+}
+
+.form__options {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__obligatory {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: none;
+}
+
+
+@media (min-width: 0) and (max-width: $mobileWidth--max) {
+  .form__container {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $tabletWidth) {
+  .form__container {
+    padding-bottom: 50px;
+  }
+
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  
+  .form__options--additional {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__optionsItem--additional {
+    flex-basis: 50%;
+  }
+
+  .form__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__submit {
+    flex-basis: 280px;
+    margin-right: 100px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .form__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__fieldset--bio {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form__fieldset--target {
+    flex-basis: 45%;
+
+    border: 1px solid var(--secondaryColor--middle);
+  }
+
+  .form__options--target {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form__fieldset--contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__legend--contacts {
+    flex-basis: 100%;
+  }
+
+  .form__group--contacts {
+    flex-basis: 45%;
+  }
+
+  .form__options--additional {
+    justify-content: space-between;
+  }
+  
+  .form__optionsItem--additional {
+    flex-basis: auto;
+  }
+}

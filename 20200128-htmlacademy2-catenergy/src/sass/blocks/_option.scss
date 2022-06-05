@@ -1,0 +1,77 @@
+.option {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  vertical-align: middle;
+}
+
+.option__indicator {
+  position: relative;
+
+  flex-shrink: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+
+  vertical-align: middle;
+
+  border: 1px solid var(--secondaryColor--dark);
+}
+
+.option:hover .option__indicator,
+.option:focus .option__indicator {
+  border: 1px solid var(--secondaryColor--darker);
+}
+
+.option:active .option__indicator {
+  border: 1px solid var(--secondaryColor--dark);
+}
+
+.option__indicator--radio {
+  border-radius: 50%;
+}
+
+.option__input:checked + .option__indicator--radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 40%;
+  height: 40%;
+
+  background: var(--brandColor);
+  border-radius: 50%;
+}
+
+.option__input:checked + .option__indicator--checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%) rotate(-45deg);
+
+  width: 65%;
+  height: 35%;
+
+  border-left: 2px solid var(--brandColor);
+  border-bottom: 2px solid var(--brandColor);
+}
+
+
+@media (min-width: $tabletWidth) {
+  .option__indicator {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .option {
+    cursor: pointer;
+  }
+}

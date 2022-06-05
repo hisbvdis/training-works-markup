@@ -1,0 +1,11 @@
+.video__player {
+  inline-size: 100%;
+  block-size: 300px;
+}
+
+
+@media (min-width: 768px) {
+  .video__player {
+    block-size: 600px;
+  }
+}

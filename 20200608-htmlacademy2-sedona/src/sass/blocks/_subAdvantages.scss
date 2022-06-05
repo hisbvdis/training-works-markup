@@ -1,0 +1,78 @@
+.subAdvantages {
+  margin: 0;
+  padding: 40px 40px 10px;
+
+  color: var(--primaryTextColor);
+
+  background: #fff;
+  list-style: none;
+}
+
+.subAdvantages__item {
+  position: relative;
+
+  margin-block-end: 30px;
+  padding-inline-start: 55px;
+
+  text-align: start;
+}
+
+.subAdvantages__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin: 0 auto;
+
+  fill: var(--brandColor);
+}
+
+.subAdvantages__title {
+  margin: 0 0 10px;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.subAdvantages__desc {
+  margin: 0;
+}
+
+
+
+@media (min-width: $tablet) {
+  .subAdvantages {
+    display: flex;
+
+    padding: 40px;
+  }
+
+  .subAdvantages__item {
+    margin: 0;
+    padding: 0 20px;
+
+    text-align: center;
+  }
+
+  .subAdvantages__icon {
+    position: static;
+
+    margin-block-end: 20px;
+  }
+
+  .subAdvantages__icon--house {
+    inline-size: 75px;
+    block-size: 72px;
+  }
+
+  .subAdvantages__icon--eat {
+    inline-size: 77px;
+    block-size: 68px;
+  }
+
+  .subAdvantages__icon--gift {
+    inline-size: 64px;
+    block-size: 75px;
+  }
+}

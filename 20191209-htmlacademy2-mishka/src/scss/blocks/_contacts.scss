@@ -1,0 +1,76 @@
+.contacts__container {
+  position: relative;
+}
+
+.contacts__field {
+  display: flex;
+  margin: 0 0 35px;
+}
+
+.contacts__field:last-child {
+  margin: 0;
+}
+
+.contacts__fieldName {
+  margin-right: 30px;
+}
+
+.contacts__email {
+  background: linear-gradient(to right, $primaryColor, $primaryColor) bottom / 100% 1px no-repeat;
+}
+
+.contacts__address {
+  line-height: 30px;
+}
+
+.contacts__mapWrapper {
+  // position: relative;
+  display: block;
+  min-height: 457px;
+  margin-bottom: 10px;
+
+  background: url('../img/contacts__mapUnderlay.jpg') center / cover no-repeat;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+}
+
+
+@media (min-width: $tabletWidth) {
+  .contacts__container {
+    padding-top: 60px;
+  }
+  
+  .contacts__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contacts__flag {
+    position: absolute;
+    top: 45px;
+    right: 55px;
+  }
+
+  .contacts__container--bottom {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .contacts__container {
+    padding-left: 175px;
+  }
+
+  .contacts__content {
+    flex-wrap: wrap;
+  }
+
+  .contacts__flag {
+    left: 0;
+  }
+}

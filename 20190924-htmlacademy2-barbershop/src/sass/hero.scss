@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+.hero {
+  padding: 38px 0 0;
+
+  background: $bg-color--service url("../img/hero-bg.jpg") center / cover no-repeat;
+}
+
+.hero__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 0) and (max-width: $mobile-width--max) {
+  .hero {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .index-page .hero {
+    min-height: 400px;
+  }
+
+  .inner-page .hero {
+    position: relative;
+
+    min-height: 210px;
+  }
+
+  .inner-page .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 34px;
+
+    background: url(../img/section-corner--primary-color.svg) 0 0 / 100% 100% no-repeat;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .hero {
+    min-height: 650px;
+    padding: 55px 0 0;
+  }
+
+  .inner-page .hero {
+    min-height: 307px;
+  }
+
+  .inner-page .hero::after {
+    height: 64px;
+  }
+}

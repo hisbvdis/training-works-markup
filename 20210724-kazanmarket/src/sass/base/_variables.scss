@@ -1,0 +1,62 @@
+:root {
+  // Background color
+  --bg-color: #ffffff;
+  --bg-gradient: linear-gradient(to left bottom, var(--brand-color) -30%, transparent 85%);
+
+
+  // Background shadow
+  --shadow-bg: 0 0 20px rgb(0 0 0 / 0.1);
+
+  // Border radius
+  --borderRadius-10: 10px;
+
+
+  // Brand color
+  --brand-color-opacity-50: #FF990050;
+  --brand-color: #FF9900;
+
+
+  // Colors
+  --color-brown: #D39254;
+  --color-brown-dark: #CD823B;
+
+
+  // Font color
+  --fontColor-main: #000000;
+
+
+  // Font size
+  --fontSize-10: 10rem;
+  --fontSize-12: 12rem;
+  --fontSize-12-18: clamp(var(--fontSize-12), 3vw, var(--fontSize-18));
+  --fontSize-12-24: clamp(var(--fontSize-12), 3vw, var(--fontSize-24));
+  --fontSize-13: 13rem;
+  --fontSize-13-18: clamp(var(--fontSize-13), 3vw, var(--fontSize-18));
+  --fontSize-13-24: clamp(var(--fontSize-13), 3vw, var(--fontSize-24));
+  --fontSize-14: 14rem;
+  --fontSize-14-24: clamp(var(--fontSize-14), 3vw, var(--fontSize-24));
+  --fontSize-18: 18rem;
+  --fontSize-18-24: clamp(var(--fontSize-18), 3vw, var(--fontSize-24));
+  --fontSize-18-36: clamp(var(--fontSize-18), 3vw, var(--fontSize-36));
+  --fontSize-18-48: clamp(var(--fontSize-18), 3vw, var(--fontSize-48));
+  --fontSize-20: 20rem;
+  --fontSize-24: 24rem;
+  --fontSize-24-36: clamp(var(--fontSize-24), 3vw, var(--fontSize-36));
+  --fontSize-24-48: clamp(var(--fontSize-24), 3vw, var(--fontSize-48));
+  --fontSize-36: 36rem;
+  --fontSize-48: 48rem;
+
+
+  // Font Family
+  --fontFamily-main: "Montserrat";
+}
+
+
+// Screen breakpoints
+$screen-xxl: 1500px;
+$screen-xl: 1250px;
+$screen-xl-max: $screen-xxl - 1;
+
+$screen-middle: 900px;
+$header-expand: 1250px;
+$header-full: 1500px;

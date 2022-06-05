@@ -1,0 +1,117 @@
+@import "variables.scss";
+
+.social__title {
+  display: none;
+  margin: 0;
+
+  text-align: center;
+}
+
+.social__list {
+  display: flex;
+  margin: 30px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  flex-basis: calc(100% / 3);
+}
+
+.social__link {
+  position: relative;
+
+  display: block;
+  min-height: 101px;
+
+  border: 1px solid #3f3f3f;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: url("../img/sprite.svg") no-repeat;
+}
+
+.social__link--vk::before {
+  width: 23px;
+  height: 26px;
+
+  background-position: -100px -1px;
+}
+
+.social__link--fb::before {
+  width: 18px;
+  height: 39px;
+
+  background-position: -128px -1px;
+}
+
+.social__link--insta::before {
+  width: 36px;
+  height: 36px;
+
+  background-position: -151px 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-basis: 100%;
+    order: 1;
+  }
+  .social__list {
+    margin: 45px 0 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .social {
+    flex-basis: auto;
+    order: 0;
+  }
+
+  .social__title {
+    display: block;
+  }
+
+  .social__list {
+    margin-top: 15px;
+  }
+
+  .social__item + .social__item {
+    margin-left: 10px;
+  }
+
+  .social__link {
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  .social__link--vk::before {
+    width: 15px;
+    height: 17px;
+
+    background-position: -100px -31px;
+  }
+
+  .social__link--fb::before {
+    width: 10px;
+    height: 21px;
+
+    background-position: -116px -31px;
+  }
+
+  .social__link--insta::before {
+    width: 19px;
+    height: 19px;
+
+    background-position: -75px 0;
+  }
+}

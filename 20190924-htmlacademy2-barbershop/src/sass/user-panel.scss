@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.user-panel {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-panel__item {
+  display: flex;
+  align-items: center;
+}
+
+.user-panel__link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.user-panel__login-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 16px;
+
+  fill: currentColor;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width--max) {
+  .user-panel__link-name {
+    display: none;
+  }
+}

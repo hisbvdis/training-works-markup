@@ -1,0 +1,25 @@
+.btn {
+  display: block;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn--rounded { 
+  border: 3px solid $navTextColor;
+  border-radius: 50px;
+}
+
+.btn--rounded:hover,
+.btn--rounded:focus { 
+  color: $hoverColor;
+  
+  background: $navTextColor;
+}
+
+.btn--rounded:active { 
+  color: rgba($hoverColor, 0.3);
+}

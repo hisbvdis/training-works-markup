@@ -1,0 +1,18 @@
+.container {
+  margin-inline: auto;
+  padding: 20px 16px;
+
+  inline-size: min(100%, 1500px);
+}
+
+.container--bg {
+  background: var(--bg-color);
+  box-shadow: var(--shadow-bg);
+}
+
+
+@media (min-width: $header-expand) {
+  .container {
+    padding-inline: 45px;
+  }
+}

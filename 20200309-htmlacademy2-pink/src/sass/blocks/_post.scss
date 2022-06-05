@@ -1,0 +1,180 @@
+.post__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  background: $sectionBg;
+}
+
+.post__img {
+  margin: 0 auto 30px;
+}
+
+.post__filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 30px;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.post__icon {
+  fill: rgba($primaryColor, 0.3);
+}
+
+.post__icon--active {
+  fill: $hoverColor;
+}
+
+.post__range {
+  position: relative;
+
+  width: 100%;
+
+  border-bottom: 2px solid #000;
+}
+
+.post__range::before {
+  content: "";
+  position: absolute;
+  // top: 50%;
+  bottom: 0;
+  right: 20%;
+  transform: translateY(50%);
+
+  width: 14px;
+  height: 14px;
+
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid $hoverColor;
+  cursor: pointer;
+}
+
+.post__applyBtn {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  
+  color: $hoverColor;
+  background: transparent;
+  border: 3px solid $hoverColor;
+}
+
+.post__applyBtn:hover,
+.post__applyBtn:focus {
+  color: #fff;
+  
+  background: $hoverColor;
+}
+
+.post__applyBtn:active {
+  opacity: 0.3;
+}
+
+.post__cancleBtn {
+  width: 100%;
+  padding: 15px;
+  
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  
+  color: $primaryColor;
+  background: transparent;
+  border: 3px solid $primaryColor;
+  opacity: 0.1;
+}
+
+.post__cancleBtn:hover,
+.post__cancleBtn:focus {
+  color: $primaryColor;
+  
+  opacity: 0.3;
+}
+
+.post__cancleBtn:active {
+  color: #fff;
+  
+  background: $primaryColor;
+  opacity: 0.3;
+}
+
+
+
+// Only mobile
+@media (max-width: $mobile--max) {
+  .post__range {  
+    display: none;
+  }
+
+  .post__range--bottom {
+    display: block;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .post__container {
+    display: flex;
+  }
+
+  .post__controls {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__filters {
+    display: block;
+
+    margin-bottom: 0;
+  }
+
+  .post__filtersItem {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    border-bottom: 1px solid #dedfe1;
+  }
+  
+  .post__range--bottom {
+    display: none;
+  }
+
+  .post__img {
+    flex-basis: 300px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .post__icon {
+    margin-right: 30px;
+  }
+
+  .post__buttons {
+    margin-top: auto;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .post__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__buttons * {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+
+  .post__applyBtn {
+    margin-bottom: 0;
+  }
+}

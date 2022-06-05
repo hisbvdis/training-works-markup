@@ -1,0 +1,17 @@
+// SASS variables
+$desktopWidth: 1024px;
+$tabletWidth: 768px;
+$tabletWidth--max: $desktopWidth - 1;
+$mobileWidth--max: $tabletWidth - 1;
+
+
+// CSS variables (custom properties)
+:root {
+  // Colors
+  --brandColor: #68B738;
+  --brandColor--darker: #5eaa2f;
+  --secondaryColor--light: #f2f2f2;
+  --secondaryColor--middle: #e6e6e6;
+  --secondaryColor--dark: #cdcdcd;
+  --secondaryColor--darker: #bababa;
+}
