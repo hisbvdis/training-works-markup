@@ -1,4 +1,4 @@
-# Markup (Training works)
+# Training works — Markup
 
 - [20190708-freebiesgallery-email-NA](https://hisbvdis.github.io/training-works-markup/20190708-freebiesgallery-email-NA/index.html)
 - [20190715-grift](https://hisbvdis.github.io/training-works-markup/20190715-grift/index.html)
